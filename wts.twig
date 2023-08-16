@@ -1,0 +1,261 @@
+
+{# <link  href="catalog/view/theme/default/stylesheet/good.css" rel="stylesheet">
+ #}
+  <style>
+.head{
+    display: flex;
+    width: 1440;
+    height: 145;
+    padding: 10px 14px;
+    justify-content: space-between;
+    margin: -9 -9;
+    align-items: center;
+  background: #CCC;
+}
+#logo{
+   width: 201px;
+height: 105px;
+    margin-left: 10px;
+   
+}
+#title{
+color: #035C52;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+ margin-right: 800px;
+ width: 380px;
+height: 44px;
+}
+p{
+    font-size: 28px;
+    color: #083E8D;
+    font-weight:bold;
+
+}
+.application{
+display: flex;
+width: 288px;
+height: 100px;
+padding: 10px;
+margin: 9 -9;
+justify-content: space-between;
+align-items: flex-start;
+border-left: 1px solid #000;
+background: #5DA7A0;
+}
+.specification{
+display: flex;
+width: 288px;
+height: 100px;
+padding: 10px;
+margin: -129 300;
+justify-content: space-between;
+align-items: flex-start;
+border-left: 1px  solid #000;
+background: #5DA7A0;
+}
+.material{
+    display: flex;
+    height: 100px;
+    width: 288px;
+    padding: 10px;
+    margin: 9 600;
+    justify-content: space-between; 
+     align-items: flex-start; 
+    border-left: 1px  solid #000;
+    background: #5DA7A0;
+}
+.dataSetting{
+    display: flex;
+    width: 288px;
+    height: 100px;
+    padding: 10px;
+    margin: -129 900;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-left: 1px  solid #000;
+    background: #5DA7A0;
+}
+.result{
+    display: flex;
+    width: 288px;
+    height: 100px;
+    padding: 10px;
+    margin: 9 1150;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-left: 1px  solid #000;
+    background: #5DA7A0;
+}
+#application{
+    border-right: 1px  solid #000;
+    width: 900;
+    height: 600;
+}
+#indexable{
+    display: flex;
+    width: 841px;
+    height: 39px;
+    padding: 15px;
+    margin: 39 15;
+    justify-content: space-between;
+    align-items: center;
+    background: #CCC;
+}
+#indexable1{
+color: #000;
+font-family: Inter;
+margin: 15 15;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#solidCarbideEndmills{
+    display: flex;
+    width: 841px;
+    height: 39px;
+    padding: 15px;
+    margin: 29 15;
+    justify-content: space-between;
+    align-items: center;
+    background: #CCC;
+}
+#turningTools{
+    display: flex;
+    width: 841px;
+    height: 39px;
+    padding: 15px;
+    margin: 29 15;
+    justify-content: space-between;
+    align-items: center;
+    background: #CCC;
+}
+#holemakingTools{
+    display: flex;
+    width: 841px;
+    height: 39px;
+    padding: 15px;
+    margin: 29 15;
+    justify-content: space-between;
+    align-items: center;
+    background: #CCC;
+}
+#select{
+display: flex;
+padding: 10px 64px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: 0px;
+color: #FFF;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: #083E8D;
+}
+.content1{
+    width: 472;
+    height: 576;
+    margin: -600 950;
+}
+.footer{
+display: flex;
+width: 1440px;
+height: 108px;
+padding: 10px;
+margin:800 0 0 0;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+background: #AAA;
+}
+ </style>
+
+ <div class="head" >
+    <img id="logo" src="catalog/view/theme/default/image/img1.png">
+    <h1 id="title" >Winstar Tool Selector</h1>
+  </div>
+
+
+<div class="navbar">
+
+<div class="application"><p><a onclick="showContent('application')">Application</a></p></div>
+<div class="specification"><p><a onclick="showContent('specification')">Specification</a></p></div>
+<div class="material"> <p><a onclick="showContent('material')">Material</a></p></div>
+<div class="dataSetting"> <p><a onclick="showContent('dataSetting')">Data Setting</a></div>
+<div class="result"> <p><a onclick="showContent('reaulr')">Result</a></div>
+
+</div>
+<div class="content" id="application" style="display: none;">
+    <div id="indexable" >
+    <p id="indexable1">Indexable Milling</p>
+    <button id="select"  onclick="showButtonContent('content1')">Select</button>
+   
+   </div>
+  
+    <div id="solidCarbideEndmills" >
+    <p id="indexable1">Solid Carbide Endmills</p>
+    <button id="select" onclick="showButtonContent('content2')">Select</button>
+    </div>
+    <div id="turningTools" >
+    <p id="indexable1">Turning Tools</p>
+    <button id="select" onclick="showButtonContent('content3')">Select</button>
+    </div>
+   
+    <div id="holemakingTools" >
+    <p id="indexable1"> Holemaking Tools</p>
+    <button id="select" onclick="showButtonContent('content4')">Select</button>
+    </div>
+</div>
+
+<div class="content1" id="content1" style="display: none;">
+  <h1>关于</h1>
+  <p>这是关于页面的内容。</p>
+</div>
+
+<div class="content1" id="content2" style="display: none;">
+  <p>ctlorem
+  </p>
+</div>
+
+<div class="content1" id="content3" style="display: none;">
+  <h1>联系我们</h1>
+  <p>这是联系我们页面的内容。</p>
+</div>
+
+<div class="content1" id="content4" style="display: none;">
+  <h1>哈囉</h1>
+  <p>这是联系我们页面的内容。</p>
+</div>
+<div class="footer">footer</div>
+<script>
+  function showContent(contentId) {
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => {
+      content.style.display = 'none';
+    });
+
+    const selectedContent = document.getElementById(contentId);
+    if (selectedContent) {
+      selectedContent.style.display = 'block';
+    }
+
+  }
+  function showButtonContent(contentId) {
+    const contents = document.querySelectorAll('.content1');
+    contents.forEach(content => {
+      content.style.display = 'none';
+    });
+
+    const selectedContent = document.getElementById(contentId);
+    if (selectedContent) {
+      selectedContent.style.display = 'block';
+    }
+    
+  }
+</script>
