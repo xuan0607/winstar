@@ -4,7 +4,7 @@
   <style>
 .head{
     display: flex;
-    width: 1440;
+    width: 1504;
     height: 145;
     padding: 10px 14px;
     justify-content: space-between;
@@ -27,12 +27,7 @@ font-style: normal;
  width: 380px;
 height: 44px;
 }
-p{
-    font-size: 28px;
-    color: #083E8D;
-    font-weight:bold;
 
-}
 .application{
 display: flex;
 width: 288px;
@@ -42,7 +37,10 @@ margin: 9 -9;
 justify-content: space-between;
 align-items: flex-start;
 border-left: 1px solid #000;
-background: #5DA7A0;
+background:#5DA7A0;
+color:#D9D9D9;
+font-size: 28px;
+font-weight:bold;
 }
 .specification{
 display: flex;
@@ -54,6 +52,9 @@ justify-content: space-between;
 align-items: flex-start;
 border-left: 1px  solid #000;
 background: #5DA7A0;
+color:#D9D9D9;
+font-size: 28px;
+font-weight:bold;
 }
 .material{
     display: flex;
@@ -65,28 +66,37 @@ background: #5DA7A0;
      align-items: flex-start; 
     border-left: 1px  solid #000;
     background: #5DA7A0;
+    color:#D9D9D9;
+    font-size: 28px;
+    font-weight:bold;
 }
 .dataSetting{
     display: flex;
     width: 288px;
     height: 100px;
     padding: 10px;
-    margin: -129 900;
+    margin: -129 909;
     justify-content: space-between;
     align-items: flex-start;
     border-left: 1px  solid #000;
     background: #5DA7A0;
+    color:#D9D9D9;
+    font-size: 28px;
+    font-weight:bold;
 }
 .result{
     display: flex;
     width: 288px;
     height: 100px;
     padding: 10px;
-    margin: 9 1150;
+    margin: 9 1215;
     justify-content: space-between;
     align-items: flex-start;
     border-left: 1px  solid #000;
     background: #5DA7A0;
+    color:#D9D9D9;
+    font-size: 28px;
+    font-weight:bold;
 }
 #application{
     border-right: 1px  solid #000;
@@ -210,9 +220,9 @@ line-height: 48px; /* 240% */
 }
 
 
-#radio input[type="radio"] {display: none; }
+.radio input[type="radio"] {display: none; }
 
-#radio .shoulderButton {
+.radio .shoulderButton {
 display: inline-block; 
 width: 160px;
 height:84px; 
@@ -227,14 +237,18 @@ font-weight: 400;
 line-height: normal; 
 text-align:center;
 border-radius: 10px;  }
-#radio .shoulderButton:hover {background: #bbb; color: #fff; }
+.radio .shoulderButton:hover {background: #b5cef0;color: #083E8D; }
+.radio input:checked + .faceButton {
+      background: #b5cef0;
+      color: #083E8D;
+    }
 #shoulderIcon{
 width: 45.691px;
 height: 30px;
 flex-shrink: 0;
 margin: 20 1190 626 60; 
 }
-#radio .faceButton {
+.radio .faceButton {
 display: inline-block; 
 width: 160px;
 height:84px; 
@@ -249,14 +263,18 @@ font-weight: 400;
 line-height: normal; 
 text-align:center;
 border-radius: 10px;  }
-#radio .faceButton:hover {background: #bbb; color: #fff; }
+.radio .faceButton:hover {background: #b5cef0;color: #083E8D; }
+.radio input:checked + .faceButton {
+      background: #b5cef0;
+      color: #083E8D;
+    }
 #faceIcon{
 width: 45.691px;
 height: 30px;
 flex-shrink: 0;
 margin:20 35 30 40;
 }
-#radio .highfeedButton{
+.radio .highfeedButton{
 display: inline-block; 
 width: 160px;
 height:84px; 
@@ -271,7 +289,11 @@ font-weight: 400;
 line-height: normal; 
 text-align:center;
 border-radius: 10px;  }
-#radio .highfeedButton:hover {background: #bbb; color: #fff; }
+.radio .highfeedButton:hover {  background: #b5cef0;color: #083E8D; }
+.radio input:checked + .highfeedButton {
+      background: #b5cef0;
+      color: #083E8D;
+    }
 #highfeedIcon{
   width: 45.691px;
 height: 30px;
@@ -279,7 +301,7 @@ flex-shrink: 0;
   margin: 20 30 20 30; 
 }
 
-#radio .copymillingButton{
+.radio .copymillingButton{
 display: inline-block; 
 width: 160px;
 height:84px; 
@@ -294,7 +316,12 @@ font-weight: 400;
 line-height: normal; 
 text-align:center;
 border-radius: 10px;  }
-#radio .copymillingButton:hover {background:red; color: #fff; }
+.radio .copymillingButton:hover {background:#b5cef0; color: #083E8D; }
+
+.radio input:checked + .copymillingButton {
+      background: #b5cef0;
+      color: #083E8D;
+    }
 
 
 #copyIcon{
@@ -305,16 +332,7 @@ flex-shrink: 0;
 }
 #ToolType input[type="radio"] {display: none; }
 
- input[type=radio]:after {
-      background-color: red; /* 选中时的颜色 */
-      border-color: #3498db;
-    }
-
-
- input[type="radio"].buttonPressed  {
-      background-color: red !important; /* 选中时的颜色 */
-       border-color: #e74c3c !important; 
-    }
+ 
 
 #ToolType .endmillingtypeButton{
 display: inline-block; 
@@ -608,28 +626,28 @@ font-style: normal;
 <div class="specification"><p><a onclick="showContent('specification');">Specification</a></p></div>
 <div class="material"> <p><a onclick="showContent('material');">Material</a></p></div>
 <div class="dataSetting"> <p><a onclick="showContent('dataSetting');">Data Setting</a></div>
-<div class="result"> <p><a onclick="showContent('reaulr');">Result</a></div>
+<div class="result"> <p><a onclick="showContent('reault');">Result</a></div>
 
 </div>
 <div class="content" id="application" style="display: none;">
     <div id="indexable" >
     <p id="indexable1">Indexable Milling</p>
-    <button id="select"  onclick="showButtonContent('IndexableMilling')">Select</button>
+    <button id="select" value="Indexable Milling" onclick="showButtonContent('IndexableMilling',value)">Select</button>
    
    </div>
   
     <div id="solidCarbideEndmills" >
     <p id="indexable1">Solid Carbide Endmills</p>
-    <button id="select" onclick="showButtonContent('SolidCarbideEndmills1')">Select</button>
+    <button id="select" value="Solid Carbide Endmills" onclick="showButtonContent('SolidCarbideEndmills1',value)">Select</button>
     </div>
     <div id="turningTools" >
     <p id="indexable1">Turning Tools</p>
-    <button id="select" onclick="showButtonContent('TurningTools1')">Select</button>
+    <button id="select" value="Turning Tools" onclick="showButtonContent('TurningTools1',value)">Select</button>
     </div>
    
     <div id="holemakingTools" >
     <p id="indexable1"> Holemaking Tools</p>
-    <button id="select" onclick="showButtonContent('Holemakingtools1')">Select</button>
+    <button id="select" value="Holemaking Tools" onclick="showButtonContent('Holemakingtools1' ,value)">Select</button>
     </div>
 </div>
 
@@ -657,7 +675,7 @@ font-style: normal;
 <div  class="content" id="specification" style="display: none;">
 
  <h1>Stratege</h1>
- <div id="radio">
+ <div class="radio">
  <label >
  <input type="radio" name="variety" value="Shoulder" />
  <span class="shoulderButton">Shoulder<img id="shoulderIcon" src="catalog/view/theme/default/image/shoulder-icon.png"></span>
@@ -674,7 +692,7 @@ font-style: normal;
  </label>
 
  <label>
- <input type="radio" name="variety" value="CopyMilling" onclick="changeColor(this)" onmouseup="togglePressedClass(this)" />
+ <input type="radio" name="variety" value="CopyMilling"  />
  <span class="copymillingButton">Copy Milling<img id="copyIcon" src="catalog/view/theme/default/image/copy-icon.png"></span>
  </label>
 </div>
@@ -900,7 +918,9 @@ font-style: normal;
 
 <script>
 
+   let previousButton = null; 
   function  showContent(contentId) {
+  
     const contents = document.querySelectorAll('.content');
     contents.forEach(content => {
       content.style.display = 'none';
@@ -910,7 +930,26 @@ font-style: normal;
     if (selectedContent) {
       selectedContent.style.display = 'block';
     }
-
+    const element = document.querySelector('.' + contentId);
+     
+    
+    
+    if (element) {
+      element.style.backgroundColor = '#035C52';
+      element.style.color = '#FFF';
+      
+    }
+    if (previousButton) {
+        previousButton.style.backgroundColor= '';
+        previousButton.style.color = '';
+      }
+      // 更新上一个按钮为当前按钮
+      previousButton = element;
+  }
+  function restoreOriginalContent(button,value) {
+    var link = button.querySelector('a');
+    console.log(link.innerText);
+    link.innerText = link.innerText.replace('\n'+value,''); // 移除添加的文本
   }
 
   function showTableButton(contentId) {
@@ -925,9 +964,18 @@ font-style: normal;
     }   
 
   }
+ const originalApplicationContent = document.querySelector('.application a').innerText;
+ function restoreOriginalContent() {
+  const element = document.querySelector('.application a');
+  element.innerText = originalApplicationContent;
+}
 
-  function showButtonContent(contentId) {
+  function showButtonContent(contentId,value) {
     const contents = document.querySelectorAll('.content1');
+    const element = document.querySelector('.application');
+    console.log(element.querySelector('a').innerText);
+    
+   
     contents.forEach(content => {
       content.style.display = 'none';
     });
@@ -937,6 +985,14 @@ font-style: normal;
       selectedContent.style.display = 'block';
     }
     
+    if (element) {
+      const link = element.querySelector('a');
+      restoreOriginalContent();
+        link.innerText+= '\n' + value;
+    
+    }
+   
+  
   }
   function showadioContent(selectedValue) {
     const contentDivs = document.querySelectorAll('.content2');
@@ -1286,22 +1342,7 @@ const faceconditions = [
   const displayOption = document.getElementById("displayOption");
   let displayedContent = "";
 
-function changeColor(radio) {
- 
-      // 如果选中，添加一个类
-      
-        console.log(radio);
-        radio.classList.toggle('buttonPressed', radio.checked);
-      
-    
-  
-}
 
-   runButton.addEventListener("click", function() {
-    // 执行updateDisplayOption函数
-    updateDisplayOption();
-    
-  });
 
    function toggleContent() {
 
@@ -1329,11 +1370,6 @@ function changeColor(radio) {
   function updateDisplayOption() {
     const selectedOption = document.querySelector('input[name="variety"]:checked');
      const selectedOption1= document.querySelector('input[name="variety1"]:checked');
-     
-    
-
-      
-
     const textValue = textInput.value.trim();
       let displayedContent = "";
      displayOption.innerHTML = "";
