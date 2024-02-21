@@ -27,13 +27,14 @@ font-style: normal;
  width: 380px;
 height: 44px;
 }
-
-.application{
+.navbar{
+  display: flex;
+}
+.menu{
 display: flex;
 width: 288px;
 height: 100px;
 padding: 10px;
-margin: 9 -9;
 justify-content: space-between;
 align-items: flex-start;
 border-left: 1px solid #000;
@@ -42,62 +43,32 @@ color:#D9D9D9;
 font-size: 28px;
 font-weight:bold;
 }
+{# .application{
+
+margin: 9 -9;
+
+}
 .specification{
-display: flex;
-width: 288px;
-height: 100px;
-padding: 10px;
+
 margin: -129 300;
-justify-content: space-between;
-align-items: flex-start;
-border-left: 1px  solid #000;
-background: #5DA7A0;
-color:#D9D9D9;
-font-size: 28px;
-font-weight:bold;
+
+
 }
 .material{
-    display: flex;
-    height: 100px;
-    width: 288px;
-    padding: 10px;
+   
     margin: 9 600;
-    justify-content: space-between; 
-     align-items: flex-start; 
-    border-left: 1px  solid #000;
-    background: #5DA7A0;
-    color:#D9D9D9;
-    font-size: 28px;
-    font-weight:bold;
+   
 }
 .dataSetting{
-    display: flex;
-    width: 288px;
-    height: 100px;
-    padding: 10px;
+  
     margin: -129 909;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-left: 1px  solid #000;
-    background: #5DA7A0;
-    color:#D9D9D9;
-    font-size: 28px;
-    font-weight:bold;
+   
 }
 .result{
-    display: flex;
-    width: 288px;
-    height: 100px;
-    padding: 10px;
+    
     margin: 9 1215;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-left: 1px  solid #000;
-    background: #5DA7A0;
-    color:#D9D9D9;
-    font-size: 28px;
-    font-weight:bold;
-}
+   
+} #}
 #application{
     border-right: 1px  solid #000;
     width: 900;
@@ -152,7 +123,7 @@ line-height: normal;
     align-items: center;
     background: #CCC;
 }
-#select{
+.select{
 display: flex;
 padding: 10px 64px;
 justify-content: center;
@@ -622,32 +593,32 @@ font-style: normal;
 
 <div class="navbar">
 
-<div class="application"><p><a onclick="showContent('application');">Application</a></p></div>
-<div class="specification"><p><a onclick="showContent('specification');">Specification</a></p></div>
-<div class="material"> <p><a onclick="showContent('material');">Material</a></p></div>
-<div class="dataSetting"> <p><a onclick="showContent('dataSetting');">Data Setting</a></div>
-<div class="result"> <p><a onclick="showContent('reault');">Result</a></div>
+<div class="menu application"><p><a onclick="showContent('application');">Application</a></p></div>
+<div class="menu specification"><p><a onclick="showContent('specification');">Specification</a></p></div>
+<div class="menu material"> <p><a onclick="showContent('material');">Material</a></p></div>
+<div class="menu dataSetting"> <p><a onclick="showContent('dataSetting');">Data Setting</a></div>
+<div class="menu result"> <p><a onclick="showContent('reault');">Result</a></div>
 
 </div>
 <div class="content" id="application" style="display: none;">
     <div id="indexable" >
     <p id="indexable1">Indexable Milling</p>
-    <button id="select" value="Indexable Milling" onclick="showButtonContent('IndexableMilling',value)">Select</button>
+    <button class="select"  value="Indexable Milling" onclick="showButtonContent('IndexableMilling',value)">Select</button>
    
    </div>
   
     <div id="solidCarbideEndmills" >
     <p id="indexable1">Solid Carbide Endmills</p>
-    <button id="select" value="Solid Carbide Endmills" onclick="showButtonContent('SolidCarbideEndmills1',value)">Select</button>
+    <button class="select"  value="Solid Carbide Endmills" onclick="showButtonContent('SolidCarbideEndmills1',value)">Select</button>
     </div>
     <div id="turningTools" >
     <p id="indexable1">Turning Tools</p>
-    <button id="select" value="Turning Tools" onclick="showButtonContent('TurningTools1',value)">Select</button>
+    <button class="select" value="Turning Tools" onclick="showButtonContent('TurningTools1',value)">Select</button>
     </div>
    
     <div id="holemakingTools" >
     <p id="indexable1"> Holemaking Tools</p>
-    <button id="select" value="Holemaking Tools" onclick="showButtonContent('Holemakingtools1' ,value)">Select</button>
+    <button class="select" value="Holemaking Tools" onclick="showButtonContent('Holemakingtools1' ,value)">Select</button>
     </div>
 </div>
 
@@ -832,72 +803,6 @@ font-style: normal;
 </div>
  <div  class="content" id="material" style="display: none;">
 
-{# <div  class="content" id="material" style="display: none;
-<table id="materialTable">
- <tr>
-  <th>Material group</th>
-  <th>Description</th>
-  <th>Hardness(HB)</th>
-  <th>Hardness(HRC)</th>
-  <th>Standard Din</th>
-  <th></th>
- </tr>
- <tr>
-  <td> P1 </td>
-  <td>Low-Carbon Steels</td>
-  <td> < 125 </td>
-  <td> - </td>
-  <td>C15, Ck22, ST37-2, S235JR, 9SMnPb28, GS38</td>
-  <td><button class="tableButton" onclick="showTableButton('materialContent')">select</button></td> 
- </tr>
-
- <tr>
- <td>P2</td>
- <td>Medium-Carbon , High-Carbon Steels</td>
- <td> < 220</td>
- <td> - </td>
- <td>ST52, S355JR, C35, GS60, Cf53</td>
- <td><button class="tableButton">select</button></td>
- </tr>
-
- <tr>
- <td>P3</td>
- <td>Alloy Steels, Tool Steels</td>
- <td> < 330</td>
- <td> - </td>
- <td>16MnCr5, Ck45, 21CrMoV5-7, 38SMn28</td>
- <td><button class="tableButton">select</button></td>
- </tr>
-
- <tr>
- <td>P4</td>
- <td>Ferritic, Martensitic, PH Stainless Steels</td>
- <td> 350~450</td>
- <td> - </td>
- <td>100Cr6, 105MnCr4, 51CrMnV4, 105WCr6, 100Cr2</td>
- <td><button class="tableButton">select</button></td>
- </tr>
-
- <tr>
- <td>P5</td>
- <td>Ferritic, Martensitic, PH Stainless Steels</td>
- <td> < 330</td>
- <td> - </td>
- <td>X6Cr13, X10Cr13, X20Cr13, X12CrMoS17, X20CrMo13</td>
- <td><button class="tableButton">select</button></td>
- </tr>
-
- <tr>
- <td>P6</td>
- <td>High-Strength Ferritic</td>
- <td> 350~450</td>
- <td> - </td>
- <td>X6Cr13, X10Cr13, X20Cr13, X12CrMoS17, X20CrMo13</td>
- <td><button class="tableButton">select</button></td>
- </tr>
-
-</table>
-</div> #}
 
 
 <div class="tableContent" id="materialContent" >
@@ -919,6 +824,7 @@ font-style: normal;
 <script>
 
    let previousButton = null; 
+   let currentContent = null;
   function  showContent(contentId) {
   
     const contents = document.querySelectorAll('.content');
@@ -933,24 +839,23 @@ font-style: normal;
     const element = document.querySelector('.' + contentId);
      
     
-    
     if (element) {
+      if (currentContent !== contentId) {
       element.style.backgroundColor = '#035C52';
       element.style.color = '#FFF';
       
-    }
     if (previousButton) {
         previousButton.style.backgroundColor= '';
         previousButton.style.color = '';
       }
       // 更新上一个按钮为当前按钮
       previousButton = element;
+      currentContent = contentId;
+    }
+   }
   }
-  function restoreOriginalContent(button,value) {
-    var link = button.querySelector('a');
-    console.log(link.innerText);
-    link.innerText = link.innerText.replace('\n'+value,''); // 移除添加的文本
-  }
+
+ 
 
   function showTableButton(contentId) {
     const contents = document.querySelectorAll('.tableContent');
@@ -964,8 +869,10 @@ font-style: normal;
     }   
 
   }
+
  const originalApplicationContent = document.querySelector('.application a').innerText;
- function restoreOriginalContent() {
+
+function restoreOriginalContent() {
   const element = document.querySelector('.application a');
   element.innerText = originalApplicationContent;
 }
