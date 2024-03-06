@@ -4,18 +4,17 @@
   <style>
 .head{
     display: flex;
-    width: 1504;
+    margin:0px;
     height: 145;
     padding: 10px 14px;
     justify-content: space-between;
-    margin: -9 -9;
     align-items: center;
-  background: #CCC;
+    background: #CCC;
 }
 #logo{
    width: 201px;
-height: 105px;
-    margin-left: 10px;
+   height: 105px;
+   margin-left: 10px;
    
 }
 #title{
@@ -43,33 +42,19 @@ color:#D9D9D9;
 font-size: 28px;
 font-weight:bold;
 }
-{# .application{
-
-margin: 9 -9;
-
+.container{
+   display: flex;
 }
-.specification{
 
-margin: -129 300;
+.content{
+   display: flex;
+}
+.left{
+   display: 1;
+}
 
-
-}
-.material{
-   
-    margin: 9 600;
-   
-}
-.dataSetting{
-  
-    margin: -129 909;
-   
-}
-.result{
-    
-    margin: 9 1215;
-   
-} #}
 #application{
+  
     border-right: 1px  solid #000;
     width: 900;
     height: 600;
@@ -138,10 +123,8 @@ font-weight: 400;
 line-height: normal;
 background: #083E8D;
 }
-.content1{
-    width: 472;
-    height: 576;
-    margin: -600 950;
+.right{
+   display: 1; 
 }
 .footer{
 display: flex;
@@ -591,26 +574,32 @@ font-style: normal;
   </div>
 
 
-<div class="navbar">
 
-<div class="menu application"><p><a onclick="showContent('application');">Application</a></p></div>
-<div class="menu specification"><p><a onclick="showContent('specification');">Specification</a></p></div>
-<div class="menu material"> <p><a onclick="showContent('material');">Material</a></p></div>
-<div class="menu dataSetting"> <p><a onclick="showContent('dataSetting');">Data Setting</a></div>
-<div class="menu result"> <p><a onclick="showContent('reault');">Result</a></div>
-
+ <div class="navbar">
+ <div class="menu application"><p><a onclick="showContent('application');">Application</a></p></div>
+ <div class="menu specification"><p><a onclick="showContent('specification');">Specification</a></p></div>
+ <div class="menu material"> <p><a onclick="showContent('material');">Material</a></p></div>
+ <div class="menu dataSetting"> <p><a onclick="showContent('dataSetting');">Data Setting</a></div>
+ <div class="menu result"> <p><a onclick="showContent('reault');">Result</a></div>
 </div>
-<div class="content" id="application" style="display: none;">
+
+<div class="container">
+   <div class="content" >
+
+   <div class="left">
+
+   <div id="application" style="display: none;">
+
     <div id="indexable" >
     <p id="indexable1">Indexable Milling</p>
     <button class="select"  value="Indexable Milling" onclick="showButtonContent('IndexableMilling',value)">Select</button>
-   
-   </div>
+    </div>
   
     <div id="solidCarbideEndmills" >
     <p id="indexable1">Solid Carbide Endmills</p>
     <button class="select"  value="Solid Carbide Endmills" onclick="showButtonContent('SolidCarbideEndmills1',value)">Select</button>
     </div>
+
     <div id="turningTools" >
     <p id="indexable1">Turning Tools</p>
     <button class="select" value="Turning Tools" onclick="showButtonContent('TurningTools1',value)">Select</button>
@@ -618,112 +607,108 @@ font-style: normal;
    
     <div id="holemakingTools" >
     <p id="indexable1"> Holemaking Tools</p>
-    <button class="select" value="Holemaking Tools" onclick="showButtonContent('Holemakingtools1' ,value)">Select</button>
+    <button class="select" value="Holemaking Tools" onclick="showButtonContent('Holemakingtools1',value)">Select</button>
     </div>
-</div>
 
-<div class="content1" id="IndexableMilling" style="display: none;">
-  <h1>关于</h1>
-  <p>这是关于页面的内容。</p>
-</div>
+  </div>
 
-<div class="content1" id="SolidCarbideEndmills1" style="display: none;">
-  <p>ctlorem
-  </p>
-</div>
+  <div id="specification" style="display: none;">
+  <h1>Stratege</h1>
+  <div class="radio">
+  <label >
+  <input type="radio" name="variety" value="Shoulder" />
+  <span class="shoulderButton">Shoulder<img id="shoulderIcon" src="catalog/view/theme/default/image/shoulder-icon.png"></span>
+  </label>
 
-<div class="content1" id="TurningTools1" style="display: none;">
-  <h1>联系我们</h1>
-  <p>这是联系我们页面的内容sss。</p>
-</div>
+  <label>
+  <input type="radio" name="variety" value="Face"  />
+  <span class="faceButton">Face<img id="faceIcon" src="catalog/view/theme/default/image/face-icon.png"></span>
+  </label>
 
-<div class="content1" id="Holemakingtools1" style="display: none;">
-  <h1>哈囉8 8 8</h1>
-  <p>这是联系我们页面的内容。</p>
-</div>
+  <label>
+  <input type="radio" name="variety" value="HighFeed"  />
+  <span class="highfeedButton">High Feed<img id="highfeedIcon" src="catalog/view/theme/default/image/high-feed-icon.png"></span>
+  </label>
 
+  <label>
+  <input type="radio" name="variety" value="CopyMilling"  />
+  <span class="copymillingButton">Copy Milling<img id="copyIcon" src="catalog/view/theme/default/image/copy-icon.png"></span>
+  </label>
+  </div>
 
-<div  class="content" id="specification" style="display: none;">
+  <h1>Tool Type</h1>
 
- <h1>Stratege</h1>
- <div class="radio">
- <label >
- <input type="radio" name="variety" value="Shoulder" />
- <span class="shoulderButton">Shoulder<img id="shoulderIcon" src="catalog/view/theme/default/image/shoulder-icon.png"></span>
- </label>
+  <div id="ToolType">
+  <label>
+  <input type="radio" name="variety1" value="EndMillingType" id="EndMillingType" onclick="toggleContent()" />
+  <span class="endmillingtypeButton">End Milling Type</span>
+  </label>
 
- <label>
- <input type="radio" name="variety" value="Face"  />
- <span class="faceButton">Face<img id="faceIcon" src="catalog/view/theme/default/image/face-icon.png"></span>
- </label>
+  <label>
+  <input type="radio" name="variety1" value="FaceMillingType" id="FaceMillingType" onclick="toggleContent()"/>
+  <span class="facemillingtypeButton">Face Milling Type</span>
+  </label>
 
-<label>
- <input type="radio" name="variety" value="HighFeed"  />
- <span class="highfeedButton">High Feed<img id="highfeedIcon" src="catalog/view/theme/default/image/high-feed-icon.png"></span>
- </label>
-
- <label>
- <input type="radio" name="variety" value="CopyMilling"  />
- <span class="copymillingButton">Copy Milling<img id="copyIcon" src="catalog/view/theme/default/image/copy-icon.png"></span>
- </label>
-</div>
-
-<h1>Tool Type</h1>
-
-<div id="ToolType">
-<label>
- <input type="radio" name="variety1" value="EndMillingType" id="EndMillingType" onclick="toggleContent()" />
- <span class="endmillingtypeButton">End Milling Type</span>
- </label>
- <label>
- <input type="radio" name="variety1" value="FaceMillingType" id="FaceMillingType" onclick="toggleContent()"/>
- <span class="facemillingtypeButton">Face Milling Type</span>
- </label>
-<label>
- <input type="radio" name="variety1" value="ModuleMillingHead" id="ModuleMillingHead" onclick="toggleContent()"/>
- <span class="modulemillingheadButton">Module Milling Head</span>
- </label>
+  <label>
+  <input type="radio" name="variety1" value="ModuleMillingHead" id="ModuleMillingHead" onclick="toggleContent()"/>
+  <span class="modulemillingheadButton">Module Milling Head</span>
+  </label>
  
-</div>
+  </div>
 
-<h1>Tool Diameter</h1>
+  <h1>Tool Diameter</h1>
 
-<div id="ToolDiameter">
+  <div id="ToolDiameter">
 
-<div id="text" style="display: none;" >
- <input type="number" id="tooldiameter"/>
-<input type="button" id="confirm" value="Confirm Diameter" /> 
-</div>
+  <div id="text" style="display: none;" >
+  <input type="number" id="tooldiameter"/>
+  <input type="button" id="confirm" value="Confirm Diameter" /> 
+  </div>
 
-<div id="select1" style="display: none;" >
- <h1>hello</h1>
-
+  <div id="select1" style="display: none;" >
+   <h1>hello</h1>
     <select id="tooldselect">
-    
      <option value="option1">40</option>
-        <option value="option2">50</option>
-        <option value="option3">63</option>
-
+     <option value="option2">50</option>
+     <option value="option3">63</option>
     </select>
-    <input type="button" id="faceconfirm" value="Confirm Diameter" /> 
+   <input type="button" id="faceconfirm" value="Confirm Diameter" /> 
+  </div>
+
+  </div>
+  <h1>Flutes</h1>
+  <div id="displayOption">
+  </div>
+
+  </div>
+  </div>  
+  </div>
+
+  
+<div class="right">
+
+<div id="IndexableMilling"  style="display: none;">
+    <h1>关于</h1>
+    <p>这是关于页面的内容。</p>
 </div>
 
+<div id="SolidCarbideEndmills1" style="display: none;">
+    <p>ctlorem</p>
 </div>
 
-
-
-<h1>Flutes</h1>
-<div id="displayOption">
-
+<div id="TurningTools1" style="display: none;">
+    <h1>联系我们</h1>
+    <p>这是联系我们页面的内容sss。</p>
 </div>
 
+<div  id="Holemakingtools1" style="display: none;">
+    <h1>哈囉8 8 8</h1>
+    <p>这是联系我们页面的内容。</p>
 </div>
 
-
-<div class="content2" id="Shoulder" style="display: none;">
+<div id="Shoulder" style="display: none;">
   <p class="content2Title">Shoulder Milling</p>
   <img id="content2Image" src="catalog/view/theme/default/image/shoulder.png">
-  <div >
   <ul >
   <li>
    <p class="content2Content">Milling with 90 degree approach angle (KAPR=90。)</p>
@@ -740,9 +725,9 @@ font-style: normal;
  </ul> 
  </div>
 
-</div>
 
-<div class="content2" id="Face" style="display: none;">
+
+<div  id="Face" style="display: none;">
 <p class="content2Title">Face Milling</p>
 <img id="content2Image" src="catalog/view/theme/default/image/face.png">
 <ul>
@@ -764,7 +749,7 @@ font-style: normal;
  </ul> 
 </div>
 
-<div class="content2" id="HighFeed" style="display: none;">
+<div  id="HighFeed" style="display: none;">
 <p class="content2Title">High Feed Milling</p>
 <img id="content2Image" src="catalog/view/theme/default/image/high-feed.png">
 <ul>
@@ -786,7 +771,7 @@ font-style: normal;
  </ul> 
 </div>
 
-<div class="content2" id="CopyMilling" style="display: none;">
+<div  id="CopyMilling" style="display: none;">
 <p class="content2Title">Copy Milling</p>
 <img id="content2Image" src="catalog/view/theme/default/image/copy.png">
 <ul>
@@ -801,6 +786,8 @@ font-style: normal;
   </li>
  </ul> 
 </div>
+
+</div>
  <div  class="content" id="material" style="display: none;">
 
 
@@ -814,6 +801,7 @@ font-style: normal;
  <button id="grayH">H</button>
 </div>
 <div id="tableContainer">hi</div>
+</div>
 
 <div class="footer">footer</div>
 
@@ -825,9 +813,15 @@ font-style: normal;
 
    let previousButton = null; 
    let currentContent = null;
+   
   function  showContent(contentId) {
-  
-    const contents = document.querySelectorAll('.content');
+
+   const rightContents = document.querySelectorAll('.right > div');
+    rightContents.forEach(content => {
+        content.style.display = 'none';
+    });
+
+    const contents = document.querySelectorAll('.content > .left > div');
     contents.forEach(content => {
       content.style.display = 'none';
     });
@@ -838,12 +832,10 @@ font-style: normal;
     }
     const element = document.querySelector('.' + contentId);
      
-    
-    if (element) {
-      if (currentContent !== contentId) {
+      if (element && currentContent !== contentId) {
       element.style.backgroundColor = '#035C52';
       element.style.color = '#FFF';
-      
+      }
     if (previousButton) {
         previousButton.style.backgroundColor= '';
         previousButton.style.color = '';
@@ -851,8 +843,8 @@ font-style: normal;
       // 更新上一个按钮为当前按钮
       previousButton = element;
       currentContent = contentId;
-    }
-   }
+    
+   
   }
 
  
@@ -878,7 +870,7 @@ function restoreOriginalContent() {
 }
 
   function showButtonContent(contentId,value) {
-    const contents = document.querySelectorAll('.content1');
+    const contents = document.querySelectorAll('.right> div');
     const element = document.querySelector('.application');
     console.log(element.querySelector('a').innerText);
     
@@ -902,14 +894,16 @@ function restoreOriginalContent() {
   
   }
   function showadioContent(selectedValue) {
-    const contentDivs = document.querySelectorAll('.content2');
+    const contentDivs = document.querySelectorAll('.right> div');
 
     contentDivs.forEach(contentDiv => {
       contentDiv.style.display = 'none';
     });
 
     const selectedContentDiv = document.getElementById(selectedValue);
+    if (selectedContentDiv) {
     selectedContentDiv.style.display = 'block';
+    }
   }
 
   const radioButtons = document.querySelectorAll('input[name="variety"]');
