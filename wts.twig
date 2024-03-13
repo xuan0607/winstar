@@ -797,7 +797,7 @@ font-style: normal;
  <button id="yelloM">M</button>
  <button id="redK">K</button>
  <button id="greenN">N</button>
- <button id="brownP">P</button>
+ <button id="brownP">S</button>
  <button id="grayH">H</button>
 </div>
 <div id="tableContainer">hi</div>
@@ -835,6 +835,7 @@ font-style: normal;
       if (element && currentContent !== contentId) {
       element.style.backgroundColor = '#035C52';
       element.style.color = '#FFF';
+
       }
     if (previousButton) {
         previousButton.style.backgroundColor= '';
@@ -887,7 +888,11 @@ function restoreOriginalContent() {
     if (element) {
       const link = element.querySelector('a');
       restoreOriginalContent();
-        link.innerText+= '\n' + value;
+        const newValueSpan = document.createElement('span');
+        newValueSpan.innerText ='\n' +  value;
+        newValueSpan.style.fontSize = '20px'; 
+        link.appendChild(newValueSpan);
+      
     
     }
    
