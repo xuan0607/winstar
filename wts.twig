@@ -1,557 +1,583 @@
-
 {# <link  href="catalog/view/theme/default/stylesheet/good.css" rel="stylesheet">
  #}
-  <style>
-.head{
-    display: flex;
-    margin:0px;
-    height: 145;
-    padding: 10px 14px;
-    justify-content: space-between;
-    align-items: center;
-    background: #CCC;
-}
-#logo{
-   width: 201px;
-   height: 105px;
-   margin-left: 10px;
-   
-}
-#title{
-color: #035C52;
-font-family: Inter;
-font-size: 36px;
-font-style: normal;
- margin-right: 800px;
- width: 380px;
-height: 44px;
-}
-.navbar{
-  display: flex;
-}
-.menu{
-display: flex;
-width: 288px;
-height: 100px;
-padding: 10px;
-justify-content: space-between;
-align-items: flex-start;
-border-left: 1px solid #000;
-background:#5DA7A0;
-color:#D9D9D9;
-font-size: 28px;
-font-weight:bold;
-}
-.container{
-   display: flex;
-}
+<style>
+	.head {
+		display: flex;
+		margin: 0;
+		height: 145;
+		padding: 10px 14px;
+		justify-content: space-between;
+		align-items: center;
+		background: #CCC;
+	}
+	#logo {
+		width: 201px;
+		height: 105px;
+		margin-left: 10px;
 
-.content{
-   display: flex;
-}
-.left{
-   display: 1;
-}
+	}
+	#title {
+		color: #035C52;
+		font-family: Inter;
+		font-size: 36px;
+		font-style: normal;
+		margin-right: 800px;
+		width: 380px;
+		height: 44px;
+	}
+	.navbar {
+		display: flex;
+	}
+	.menu {
+		display: flex;
+		width: 288px;
+		height: 100px;
+		padding: 10px;
+		justify-content: space-between;
+		align-items: flex-start;
+		border-left: 1px solid #000;
+		background: #5DA7A0;
+		color: #D9D9D9;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	.container {
+		display: flex;
+	}
 
-#application{
-  
-    border-right: 1px  solid #000;
-    width: 900;
-    height: 600;
-}
-#indexable{
-    display: flex;
-    width: 841px;
-    height: 39px;
-    padding: 15px;
-    margin: 39 15;
-    justify-content: space-between;
-    align-items: center;
-    background: #CCC;
-}
-#indexable1{
-color: #000;
-font-family: Inter;
-margin: 15 15;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-#solidCarbideEndmills{
-    display: flex;
-    width: 841px;
-    height: 39px;
-    padding: 15px;
-    margin: 29 15;
-    justify-content: space-between;
-    align-items: center;
-    background: #CCC;
-}
-#turningTools{
-    display: flex;
-    width: 841px;
-    height: 39px;
-    padding: 15px;
-    margin: 29 15;
-    justify-content: space-between;
-    align-items: center;
-    background: #CCC;
-}
-#holemakingTools{
-    display: flex;
-    width: 841px;
-    height: 39px;
-    padding: 15px;
-    margin: 29 15;
-    justify-content: space-between;
-    align-items: center;
-    background: #CCC;
-}
-.select{
-display: flex;
-padding: 10px 64px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border: 0px;
-color: #FFF;
-font-family: Inter;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background: #083E8D;
-}
-.right{
-   display: 1; 
-}
-.footer{
-display: flex;
-width: 1440px;
-height: 108px;
-padding: 10px;
-margin:800 0 0 0;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-background: #AAA;
-}
-#specification{
-    border-right: 1px  solid #000;
-    width: 900;
-    height: 600;
-}
+	.content {
+		display: flex;
+	}
+	.left {
+		display: 1;
+	}
 
-.content2{
-    width: 472;
-    height: 576;
-    margin: -600 950;
-}
-.content2Title{
-color: #000;
-font-family: Inter;
-margin-left:100;
-font-size: 32px;
-font-style: normal;
-font-weight: 600;
-line-height: 48px; /* 150% */
-}
-.content2Content{
-width: 472px;
-color: #000;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 48px; /* 240% */
-}
-#content2Image{
-  width: 190.93px;
-  height: 124.363px;
-  margin: 20 500 25 120; 
-}
+	#application {
 
+		border-right: 1px solid #000;
+		width: 900;
+		height: 600;
+	}
+	#indexable {
+		display: flex;
+		width: 841px;
+		height: 39px;
+		padding: 15px;
+		margin: 39 15;
+		justify-content: space-between;
+		align-items: center;
+		background: #CCC;
+	}
+	#indexable1 {
+		color: #000;
+		font-family: Inter;
+		margin: 15;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	#solidCarbideEndmills {
+		display: flex;
+		width: 841px;
+		height: 39px;
+		padding: 15px;
+		margin: 29 15;
+		justify-content: space-between;
+		align-items: center;
+		background: #CCC;
+	}
+	#turningTools {
+		display: flex;
+		width: 841px;
+		height: 39px;
+		padding: 15px;
+		margin: 29 15;
+		justify-content: space-between;
+		align-items: center;
+		background: #CCC;
+	}
+	#holemakingTools {
+		display: flex;
+		width: 841px;
+		height: 39px;
+		padding: 15px;
+		margin: 29 15;
+		justify-content: space-between;
+		align-items: center;
+		background: #CCC;
+	}
+	.select {
+		display: flex;
+		padding: 10px 64px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		border: 0;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		background: #083E8D;
+	}
+	.right {
+		display: 1;
+	}
+	.footer {
+		display: flex;
+		width: 1440px;
+		height: 108px;
+		padding: 10px;
+		margin: 800 0 0;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		background: #AAA;
+	}
+	#specification {
+		border-right: 1px solid #000;
+		width: 900;
+		height: 600;
+	}
 
-.radio input[type="radio"] {display: none; }
-
-.radio .shoulderButton {
-display: inline-block; 
-width: 160px;
-height:84px; 
-margin: 20 1190 626 45; 
-padding: 10px; 
-background: #083E8D; 
-color: #FFF; 
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
-text-align:center;
-border-radius: 10px;  }
-.radio .shoulderButton:hover {background: #b5cef0;color: #083E8D; }
-.radio input:checked + .faceButton {
-      background: #b5cef0;
-      color: #083E8D;
-    }
-#shoulderIcon{
-width: 45.691px;
-height: 30px;
-flex-shrink: 0;
-margin: 20 1190 626 60; 
-}
-.radio .faceButton {
-display: inline-block; 
-width: 160px;
-height:84px; 
-margin: -730 999 626 255; 
-padding: 10px; 
-background: #083E8D; 
-color: #FFF; 
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
-text-align:center;
-border-radius: 10px;  }
-.radio .faceButton:hover {background: #b5cef0;color: #083E8D; }
-.radio input:checked + .faceButton {
-      background: #b5cef0;
-      color: #083E8D;
-    }
-#faceIcon{
-width: 45.691px;
-height: 30px;
-flex-shrink: 0;
-margin:20 35 30 40;
-}
-.radio .highfeedButton{
-display: inline-block; 
-width: 160px;
-height:84px; 
-margin: -730 999 626 465; 
-padding: 10px; 
-background: #083E8D; 
-color: #FFF; 
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
-text-align:center;
-border-radius: 10px;  }
-.radio .highfeedButton:hover {  background: #b5cef0;color: #083E8D; }
-.radio input:checked + .highfeedButton {
-      background: #b5cef0;
-      color: #083E8D;
-    }
-#highfeedIcon{
-  width: 45.691px;
-height: 30px;
-flex-shrink: 0;
-  margin: 20 30 20 30; 
-}
-
-.radio .copymillingButton{
-display: inline-block; 
-width: 160px;
-height:84px; 
-margin: -730 999 20 675; 
-padding: 10px; 
-background: #083E8D; 
-color: #FFF; 
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal; 
-text-align:center;
-border-radius: 10px;  }
-.radio .copymillingButton:hover {background:#b5cef0; color: #083E8D; }
-
-.radio input:checked + .copymillingButton {
-      background: #b5cef0;
-      color: #083E8D;
-    }
+	.content2 {
+		width: 472;
+		height: 576;
+		margin: -600 950;
+	}
+	.content2Title {
+		color: #000;
+		font-family: Inter;
+		margin-left: 100;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 48px; /* 150% */
+	}
+	.content2Content {
+		width: 472px;
+		color: #000;
+		font-family: Inter;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 48px; /* 240% */
+	}
+	#content2Image {
+		width: 190.93px;
+		height: 124.363px;
+		margin: 20 500 25 120;
+	}
 
 
-#copyIcon{
-   width: 45.691px;
-height: 30px;
-flex-shrink: 0;
-  margin: 20 30 20 30; 
-}
-#ToolType input[type="radio"] {display: none; }
+	.radio input[type="radio"] {
+		display: none;
+	}
 
- 
+	.radio .shoulderButton {
+		display: inline-block;
+		width: 160px;
+		height: 84px;
+		margin: 20 1190 626 45;
+		padding: 10px;
+		background: #083E8D;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-align: center;
+		border-radius: 10px;
+	}
+	.radio .shoulderButton:hover {
+		background: #b5cef0;
+		color: #083E8D;
+	}
+	.radio input:checked + .faceButton {
+		background: #b5cef0;
+		color: #083E8D;
+	}
+	#shoulderIcon {
+		width: 45.691px;
+		height: 30px;
+		flex-shrink: 0;
+		margin: 20 1190 626 60;
+	}
+	.radio .faceButton {
+		display: inline-block;
+		width: 160px;
+		height: 84px;
+		margin: -730 999 626 255;
+		padding: 10px;
+		background: #083E8D;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-align: center;
+		border-radius: 10px;
+	}
+	.radio .faceButton:hover {
+		background: #b5cef0;
+		color: #083E8D;
+	}
+	.radio input:checked + .faceButton {
+		background: #b5cef0;
+		color: #083E8D;
+	}
+	#faceIcon {
+		width: 45.691px;
+		height: 30px;
+		flex-shrink: 0;
+		margin: 20 35 30 40;
+	}
+	.radio .highfeedButton {
+		display: inline-block;
+		width: 160px;
+		height: 84px;
+		margin: -730 999 626 465;
+		padding: 10px;
+		background: #083E8D;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-align: center;
+		border-radius: 10px;
+	}
+	.radio .highfeedButton:hover {
+		background: #b5cef0;
+		color: #083E8D;
+	}
+	.radio input:checked + .highfeedButton {
+		background: #b5cef0;
+		color: #083E8D;
+	}
+	#highfeedIcon {
+		width: 45.691px;
+		height: 30px;
+		flex-shrink: 0;
+		margin: 20 30;
+	}
 
-#ToolType .endmillingtypeButton{
-display: inline-block; 
-width: 210px;
-height:84px; 
-margin: 24 999 0 45; 
-padding: 10px; 
-color: #FFF; 
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 84px; 
-border-radius: 10px;
-background: #035C52;
-}
-#ToolType .endmillingtypeButton:hover {background: #bbb; color: #fff; }
+	.radio .copymillingButton {
+		display: inline-block;
+		width: 160px;
+		height: 84px;
+		margin: -730 999 20 675;
+		padding: 10px;
+		background: #083E8D;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-align: center;
+		border-radius: 10px;
+	}
+	.radio .copymillingButton:hover {
+		background: #b5cef0;
+		color: #083E8D;
+	}
 
-#ToolType .facemillingtypeButton{
-display: inline-block; 
-width: 210px;
-height:84px; 
-margin: -104 999 0 345; 
-padding: 10px; 
-color: #FFF; 
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 84px; 
-border-radius: 10px;
-background: #035C52;
-}
-#ToolType .facemillingtypeButton:hover {background: #bbb; color: #fff; }
-
-#ToolType .modulemillingheadButton{
-display: inline-block; 
-width: 210px;
-height:84px; 
-margin: -106 999 0 630; 
-padding: 10px; 
-color: #FFF; 
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 84px; 
-border-radius: 10px;
-background: #035C52;
-}
-#ToolType .modulemillingheadButton:hover {background: #bbb; color: #fff; }
-
-#ToolDiameter #tooldiameter{
-  width: 464px;
-height: 46px;
-margin:20 0 0 45;
-flex-shrink: 0;
-font-size: 24px;
-border: 2px solid #035C52;
-background: #FFF;
-}
-#ToolDiameter #confirm{
-  width: 232px;
-height: 46px;
-display: flex;
-padding: 6px 18px;
-margin:-43 450 0 540;
-justify-content: center;
-align-items: center;
-gap: 17px;
-align-self: stretch;
-border-radius: 5px;
-background: #083E8D;
-color: #FFF;
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-#ToolDiameter #faceconfirm{
-  width: 232px;
-height: 46px;
-display: flex;
-padding: 6px 18px;
-margin:-43 450 0 540;
-justify-content: center;
-align-items: center;
-gap: 17px;
-align-self: stretch;
-border-radius: 5px;
-background: #083E8D;
-color: #FFF;
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-#ToolDiameter #tooldselect{
-  width: 464px;
-height: 46px;
-margin:20 0 0 45;
-flex-shrink: 0;
-font-size: 24px;
-border: 2px solid #035C52;
-background: #FFF;
-}
-#displayOption{
-  display: inline-block;
-  margin-top:20px;
-  margin-left:50px;
-}
-#displayOption input[type="radio"]{
-  margin-right:20px;
-}
-.imgoption3{
-  width: 56px;
-height: 56px;
-margin-right:50px;
-
-}
-table{
-  background: #D1E9F7;
-   width: 50%;
-   border: 1px solid;
-   border-spacing: 0;
-}
-td{
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-   text-align:center;
-}
-th{
-  border-left: 1px solid black;
-  background: #D9D9D9;
-}
+	.radio input:checked + .copymillingButton {
+		background: #b5cef0;
+		color: #083E8D;
+	}
 
 
-tr td:first-child{
-  border-left: none;
-}
+	#copyIcon {
+		width: 45.691px;
+		height: 30px;
+		flex-shrink: 0;
+		margin: 20 30;
+	}
+	#ToolType input[type="radio"] {
+		display: none;
+	}
 
-td:first-child{
-  background: #2F90BF;
-  font-size:24px;
-  color: #FFFFFF;
 
-}
+	#ToolType .endmillingtypeButton {
+		display: inline-block;
+		width: 210px;
+		height: 84px;
+		margin: 24 999 0 45;
+		padding: 10px;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 84px;
+		border-radius: 10px;
+		background: #035C52;
+	}
+	#ToolType .endmillingtypeButton:hover {
+		background: #bbb;
+		color: #fff;
+	}
 
-tr:nth-of-type(1) th {
-    border-top: none;
-}
+	#ToolType .facemillingtypeButton {
+		display: inline-block;
+		width: 210px;
+		height: 84px;
+		margin: -104 999 0 345;
+		padding: 10px;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 84px;
+		border-radius: 10px;
+		background: #035C52;
+	}
+	#ToolType .facemillingtypeButton:hover {
+		background: #bbb;
+		color: #fff;
+	}
 
-.tableButton{
-  background: #299E61;
-}
+	#ToolType .modulemillingheadButton {
+		display: inline-block;
+		width: 210px;
+		height: 84px;
+		margin: -106 999 0 630;
+		padding: 10px;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 84px;
+		border-radius: 10px;
+		background: #035C52;
+	}
+	#ToolType .modulemillingheadButton:hover {
+		background: #bbb;
+		color: #fff;
+	}
 
-.tableContent{
-display: inline-flex;
-flex-direction: column;
-margin:-280 76 217 920;
-align-items: flex-start;
-}
+	#ToolDiameter #tooldiameter {
+		width: 464px;
+		height: 46px;
+		margin: 20 0 0 45;
+		flex-shrink: 0;
+		font-size: 24px;
+		border: 2px solid #035C52;
+		background: #FFF;
+	}
+	#ToolDiameter #confirm {
+		width: 232px;
+		height: 46px;
+		display: flex;
+		padding: 6px 18px;
+		margin: -43 450 0 540;
+		justify-content: center;
+		align-items: center;
+		gap: 17px;
+		align-self: stretch;
+		border-radius: 5px;
+		background: #083E8D;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	#ToolDiameter #faceconfirm {
+		width: 232px;
+		height: 46px;
+		display: flex;
+		padding: 6px 18px;
+		margin: -43 450 0 540;
+		justify-content: center;
+		align-items: center;
+		gap: 17px;
+		align-self: stretch;
+		border-radius: 5px;
+		background: #083E8D;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	#ToolDiameter #tooldselect {
+		width: 464px;
+		height: 46px;
+		margin: 20 0 0 45;
+		flex-shrink: 0;
+		font-size: 24px;
+		border: 2px solid #035C52;
+		background: #FFF;
+	}
+	#displayOption {
+		display: inline-block;
+		margin-top: 20px;
+		margin-left: 50px;
+	}
+	#displayOption input[type="radio"] {
+		margin-right: 20px;
+	}
+	.imgoption3 {
+		width: 56px;
+		height: 56px;
+		margin-right: 50px;
 
-#blueP{
-display: flex;
-width: 60px;
-height:60px;
-padding: 10px;
-margin:400 0 0 0;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-background: #2F90BF;
-color: #FFF;
-font-family: Inter;
-font-size: 36px;
-font-style: normal;
-}
-#yelloM{
-display: flex;
-width: 60px;
-height:60px;
-padding: 10px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-background: #F5C032;
-color: #FFF;
-font-family: Inter;
-font-size: 36px;
-font-style: normal;
-}
-#redK{
-display: flex;
-width: 60px;
-height:60px;
-padding: 10px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-background: #D9281C;
-color: #FFF;
-font-family: Inter;
-font-size: 36px;
-font-style: normal;
-}
-#greenN{
-  display: flex;
-width: 60px;
-height:60px;
-padding: 10px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-background: #299E61;
-color: #FFF;
-font-family: Inter;
-font-size: 36px;
-font-style: normal;
-}
-#brownP{
-  display: flex;
-width: 60px;
-height:60px;
-padding: 10px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-background: #BA8E58;
-color: #FFF;
-font-family: Inter;
-font-size: 36px;
-font-style: normal;
-}
-#grayH{
-  display: flex;
-width: 60px;
-height:60px;
-padding: 10px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-background: #727171;
-color: #FFF;
-font-family: Inter;
-font-size: 36px;
-font-style: normal;
-}
-#tableContainer{
-  margin:-580 0 0 0;
-}
-.buttonPressed {
-    background-color: red;
-    /* 添加其他样式，以更改按钮在按下后的外观 */
-} 
+	}
+	table {
+		background: #D1E9F7;
+		width: 50%;
+		border: 1px solid;
+		border-spacing: 0;
+	}
+	td {
+		border-top: 1px solid black;
+		border-left: 1px solid black;
+		text-align: center;
+	}
+	th {
+		border-left: 1px solid black;
+		background: #D9D9D9;
+	}
 
- </style>
+
+	tr td:first-child {
+		border-left: none;
+	}
+
+	td:first-child {
+		background: #2F90BF;
+		font-size: 24px;
+		color: #FFFFFF;
+
+	}
+
+	tr:nth-of-type(1) th {
+		border-top: none;
+	}
+
+	.tableButton {
+		background: #299E61;
+	}
+
+	.tableContent {
+		display: inline-flex;
+		flex-direction: column;
+		margin: -280 76 217 920;
+		align-items: flex-start;
+	}
+
+	#blueP {
+		display: flex;
+		width: 60px;
+		height: 60px;
+		padding: 10px;
+		margin: 400 0 0;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		background: #2F90BF;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 36px;
+		font-style: normal;
+	}
+	#yelloM {
+		display: flex;
+		width: 60px;
+		height: 60px;
+		padding: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		background: #F5C032;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 36px;
+		font-style: normal;
+	}
+	#redK {
+		display: flex;
+		width: 60px;
+		height: 60px;
+		padding: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		background: #D9281C;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 36px;
+		font-style: normal;
+	}
+	#greenN {
+		display: flex;
+		width: 60px;
+		height: 60px;
+		padding: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		background: #299E61;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 36px;
+		font-style: normal;
+	}
+	#brownP {
+		display: flex;
+		width: 60px;
+		height: 60px;
+		padding: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		background: #BA8E58;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 36px;
+		font-style: normal;
+	}
+	#grayH {
+		display: flex;
+		width: 60px;
+		height: 60px;
+		padding: 10px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		background: #727171;
+		color: #FFF;
+		font-family: Inter;
+		font-size: 36px;
+		font-style: normal;
+	}
+	#tableContainer {
+		margin: -580 0 0;
+	}
+	.buttonPressed {
+		background-color: red;
+		/* 添加其他样式，以更改按钮在按下后的外观 */
+	}
+</style>
  <script>
 
   function  showContent(contentId) {
@@ -568,751 +594,765 @@ font-style: normal;
   }
  </script>
 
- <div class="head" >
-    <img id="logo" src="catalog/view/theme/default/image/img1.png">
-    <h1 id="title" >Winstar Tool Selector</h1>
-  </div>
+<div class="head">
+	<img id="logo" src="catalog/view/theme/default/image/img1.png">
+	<h1 id="title">Winstar Tool Selector</h1>
+</div>
 
 
-
- <div class="navbar">
- <div class="menu application"><p><a onclick="showContent('application');">Application</a></p></div>
- <div class="menu specification"><p><a onclick="showContent('specification');">Specification</a></p></div>
- <div class="menu material"> <p><a onclick="showContent('material');">Material</a></p></div>
- <div class="menu dataSetting"> <p><a onclick="showContent('dataSetting');">Data Setting</a></div>
- <div class="menu result"> <p><a onclick="showContent('reault');">Result</a></div>
+<div class="navbar">
+	<div class="menu application">
+		<p>
+			<a onclick="showContent('application');">Application</a>
+		</p>
+	</div>
+	<div class="menu specification">
+		<p>
+			<a onclick="showContent('specification');">Specification</a>
+		</p>
+	</div>
+	<div class="menu material">
+		<p>
+			<a onclick="showContent('material');">Material</a>
+		</p>
+	</div>
+	<div class="menu dataSetting">
+		<p>
+			<a onclick="showContent('dataSetting');">Data Setting</a>
+		</p>
+	</div>
+	<div class="menu result">
+		<p>
+			<a onclick="showContent('reault');">Result</a>
+		</p>
+	</div>
 </div>
 
 <div class="container">
-   <div class="content" >
-
-   <div class="left">
-
-   <div id="application" style="display: none;">
-
-    <div id="indexable" >
-    <p id="indexable1">Indexable Milling</p>
-    <button class="select"  value="Indexable Milling" onclick="showButtonContent('IndexableMilling',value)">Select</button>
-    </div>
-  
-    <div id="solidCarbideEndmills" >
-    <p id="indexable1">Solid Carbide Endmills</p>
-    <button class="select"  value="Solid Carbide Endmills" onclick="showButtonContent('SolidCarbideEndmills1',value)">Select</button>
-    </div>
-
-    <div id="turningTools" >
-    <p id="indexable1">Turning Tools</p>
-    <button class="select" value="Turning Tools" onclick="showButtonContent('TurningTools1',value)">Select</button>
-    </div>
-   
-    <div id="holemakingTools" >
-    <p id="indexable1"> Holemaking Tools</p>
-    <button class="select" value="Holemaking Tools" onclick="showButtonContent('Holemakingtools1',value)">Select</button>
-    </div>
-
-  </div>
-
-  <div id="specification" style="display: none;">
-  <h1>Stratege</h1>
-  <div class="radio">
-  <label >
-  <input type="radio" name="variety" value="Shoulder" />
-  <span class="shoulderButton">Shoulder<img id="shoulderIcon" src="catalog/view/theme/default/image/shoulder-icon.png"></span>
-  </label>
-
-  <label>
-  <input type="radio" name="variety" value="Face"  />
-  <span class="faceButton">Face<img id="faceIcon" src="catalog/view/theme/default/image/face-icon.png"></span>
-  </label>
-
-  <label>
-  <input type="radio" name="variety" value="HighFeed"  />
-  <span class="highfeedButton">High Feed<img id="highfeedIcon" src="catalog/view/theme/default/image/high-feed-icon.png"></span>
-  </label>
-
-  <label>
-  <input type="radio" name="variety" value="CopyMilling"  />
-  <span class="copymillingButton">Copy Milling<img id="copyIcon" src="catalog/view/theme/default/image/copy-icon.png"></span>
-  </label>
-  </div>
-
-  <h1>Tool Type</h1>
-
-  <div id="ToolType">
-  <label>
-  <input type="radio" name="variety1" value="EndMillingType" id="EndMillingType" onclick="toggleContent()" />
-  <span class="endmillingtypeButton">End Milling Type</span>
-  </label>
-
-  <label>
-  <input type="radio" name="variety1" value="FaceMillingType" id="FaceMillingType" onclick="toggleContent()"/>
-  <span class="facemillingtypeButton">Face Milling Type</span>
-  </label>
-
-  <label>
-  <input type="radio" name="variety1" value="ModuleMillingHead" id="ModuleMillingHead" onclick="toggleContent()"/>
-  <span class="modulemillingheadButton">Module Milling Head</span>
-  </label>
- 
-  </div>
-
-  <h1>Tool Diameter</h1>
-
-  <div id="ToolDiameter">
-
-  <div id="text" style="display: none;" >
-  <input type="number" id="tooldiameter"/>
-  <input type="button" id="confirm" value="Confirm Diameter" /> 
-  </div>
-
-  <div id="select1" style="display: none;" >
-   <h1>hello</h1>
-    <select id="tooldselect">
-     <option value="option1">40</option>
-     <option value="option2">50</option>
-     <option value="option3">63</option>
-    </select>
-   <input type="button" id="faceconfirm" value="Confirm Diameter" /> 
-  </div>
-
-  </div>
-  <h1>Flutes</h1>
-  <div id="displayOption">
-  </div>
-
-  </div>
-  </div>  
-  </div>
-
-  
-<div class="right">
-
-<div id="IndexableMilling"  style="display: none;">
-    <h1>关于</h1>
-    <p>这是关于页面的内容。</p>
-</div>
-
-<div id="SolidCarbideEndmills1" style="display: none;">
-    <p>ctlorem</p>
-</div>
-
-<div id="TurningTools1" style="display: none;">
-    <h1>联系我们</h1>
-    <p>这是联系我们页面的内容sss。</p>
-</div>
-
-<div  id="Holemakingtools1" style="display: none;">
-    <h1>哈囉8 8 8</h1>
-    <p>这是联系我们页面的内容。</p>
-</div>
-
-<div id="Shoulder" style="display: none;">
-  <p class="content2Title">Shoulder Milling</p>
-  <img id="content2Image" src="catalog/view/theme/default/image/shoulder.png">
-  <ul >
-  <li>
-   <p class="content2Content">Milling with 90 degree approach angle (KAPR=90。)</p>
-  </li>
-  <li>
-  <p class="content2Content">The thickness of the chips is large.</p>
-  </li>
-  <li>
-  <p class="content2Content">This strategy will generate mostly radial forces.</p>
-  </li>
-  <li>
-  <p class="content2Content">Advantageous for milling on workpieces with a weak structure, thin walls or unstable fixture.</p>
-  </li>
- </ul> 
- </div>
-
-
-
-<div  id="Face" style="display: none;">
-<p class="content2Title">Face Milling</p>
-<img id="content2Image" src="catalog/view/theme/default/image/face.png">
-<ul>
-  <li>
-   <p class="content2Content">Milling with 45 degree approach angle (KAPR=45。)</p>
-  </li>
-  <li>
-  <p class="content2Content">The thickness of the chips is medium.</p>
-  </li>
-  <li>
-  <p class="content2Content">This strategy will generate well balanced radial forces and axial forces.</p>
-  </li>
-  <li>
-  <p class="content2Content">Generally purpose choice for face milling.</p>
-  </li>
-  <li>
-  <p class="content2Content">Limits vibration tendencies when milling long overhangs or with weak tool holders.</p>
-  </li>
- </ul> 
-</div>
-
-<div  id="HighFeed" style="display: none;">
-<p class="content2Title">High Feed Milling</p>
-<img id="content2Image" src="catalog/view/theme/default/image/high-feed.png">
-<ul>
-  <li>
-   <p class="content2Content">Milling with nearly 10 degree approach Angle (KAPR=45。)</p>
-  </li>
-  <li>
-  <p class="content2Content">The thickness of the chips is thin.</p>
-  </li>
-  <li>
-  <p class="content2Content">This strategy will generate mostly axial forces.</p>
-  </li>
-  <li>
-  <p class="content2Content">Allows for high feed per tooth at small depth of cut.</p>
-  </li>
-  <li>
-  <p class="content2Content">Limits vibration tendencies when milling long overhangs or with weak tool holders.</p>
-  </li>
- </ul> 
-</div>
-
-<div  id="CopyMilling" style="display: none;">
-<p class="content2Title">Copy Milling</p>
-<img id="content2Image" src="catalog/view/theme/default/image/copy.png">
-<ul>
-  <li>
-   <p class="content2Content">Milling with round inserts, the approach angle depends on the depth of cut.</p>
-  </li>
-  <li>
-  <p class="content2Content">Suitable for general purpose milling and is effective for roughing operation .</p>
-  </li>
-  <li>
-  <p class="content2Content">Strong cutting edge is suitable for high table feed with thinner chips generated.</p>
-  </li>
- </ul> 
-</div>
-
-</div>
- <div  class="content" id="material" style="display: none;">
-
-
-
-<div class="tableContent" id="materialContent" >
- <button id="blueP">P</button>
- <button id="yelloM">M</button>
- <button id="redK">K</button>
- <button id="greenN">N</button>
- <button id="brownP">S</button>
- <button id="grayH">H</button>
-</div>
-<div id="tableContainer">hi</div>
-</div>
-
-<div class="footer">footer</div>
-
-
-
-
-
-<script>
-
-   let previousButton = null; 
-   let currentContent = null;
-   
-  function  showContent(contentId) {
-
-   const rightContents = document.querySelectorAll('.right > div');
-    rightContents.forEach(content => {
-        content.style.display = 'none';
-    });
-
-    const contents = document.querySelectorAll('.content > .left > div');
-    contents.forEach(content => {
-      content.style.display = 'none';
-    });
-
-    const selectedContent = document.getElementById(contentId);
-    if (selectedContent) {
-      selectedContent.style.display = 'block';
-    }
-    const element = document.querySelector('.' + contentId);
-     
-      if (element && currentContent !== contentId) {
-      element.style.backgroundColor = '#035C52';
-      element.style.color = '#FFF';
-
-      }
-    if (previousButton) {
-        previousButton.style.backgroundColor= '';
-        previousButton.style.color = '';
-      }
-      // 更新上一个按钮为当前按钮
-      previousButton = element;
-      currentContent = contentId;
-    
-   
-  }
-
- 
-
-  function showTableButton(contentId) {
-    const contents = document.querySelectorAll('.tableContent');
-    contents.forEach(content => {
-      content.style.display = 'none';
-    });
-
-    const selectedContent = document.getElementById(contentId);
-    if (selectedContent) {
-      selectedContent.style.display = 'block';
-    }   
-
-  }
-
- const originalApplicationContent = document.querySelector('.application a').innerText;
-
-function restoreOriginalContent() {
-  const element = document.querySelector('.application a');
-  element.innerText = originalApplicationContent;
-}
-
-  function showButtonContent(contentId,value) {
-    const contents = document.querySelectorAll('.right> div');
-    const element = document.querySelector('.application');
-    console.log(element.querySelector('a').innerText);
-    
-   
-    contents.forEach(content => {
-      content.style.display = 'none';
-    });
-
-    const selectedContent = document.getElementById(contentId);
-    if (selectedContent) {
-      selectedContent.style.display = 'block';
-    }
-    
-    if (element) {
-      const link = element.querySelector('a');
-      restoreOriginalContent();
-        const newValueSpan = document.createElement('span');
-        newValueSpan.innerText ='\n' +  value;
-        newValueSpan.style.fontSize = '20px'; 
-        link.appendChild(newValueSpan);
-      
-    
-    }
-   
-  
-  }
-  function showadioContent(selectedValue) {
-    const contentDivs = document.querySelectorAll('.right> div');
-
-    contentDivs.forEach(contentDiv => {
-      contentDiv.style.display = 'none';
-    });
-
-    const selectedContentDiv = document.getElementById(selectedValue);
-    if (selectedContentDiv) {
-    selectedContentDiv.style.display = 'block';
-    }
-  }
-
-  const radioButtons = document.querySelectorAll('input[name="variety"]');
-  radioButtons.forEach(radioButton => {
-    radioButton.addEventListener('change', function() {
-      showadioContent(this.value);
-    });
-  });
-
-  const tableDataBlueP = [
-    ['P1', 'Low-Carbon Steels','< 125', '-','C15, Ck22, ST37-2, S235JR, 9SMnPb28, GS38',createButton('select', 'buttonP1')],
-    ['P2', 'Medium-Carbon Steels, High-Carbon Steels', '< 220','-','ST52, S355JR, C35, GS60, Cf53',createButton('select', 'buttonP2')],
-    ['P3', 'Alloy Steels, Tool Steels','< 330','-', '16MnCr5, Ck45, 21CrMoV5-7, 38SMn28',createButton('select', 'buttonP3')],
-    ['P4','Alloy Steels, Tool Stee','350 ~ 450', '-','100Cr6, 105MnCr4, 51CrMnV4, 105WCr6, 100Cr2',createButton('select', 'buttonP4')],
-    ['P5','Ferritic, Martensitic, PH Stainless Steels','< 330', '-','X6Cr13, X10Cr13, X20Cr13, X12CrMoS17, X20CrMo13',createButton('select', 'buttonP5')],
-    ['P6','High-Strength Ferritic, Martensitic, PH Stainless Steels','350 ~ 450','-', 'X40CrMoV51, H1, X155CrVMo121, S6-5-2-5, X45Cr13, X120Mn12',createButton('select', 'buttonP6')]
-  ];
-  const showblueP = document.getElementById('blueP');
-   const tableContainer = document.getElementById('tableContainer');
-
-  showblueP.addEventListener('click', function() {
-    displayTable(tableDataBlueP);
-  });
-
-function displayTable(data) {
-    // 创建表格元素
-    var table = document.createElement('table');
-
-    // 创建表头
-    var thead = table.createTHead();
-    var headerRow = thead.insertRow();
-    var headers = ['Material group' , 'Description', 'Hardness(HB)','Hardness(HRC)','Standard Din',''];
-
-    // 插入表头单元格
-    headers.forEach(function(headerText) {
-      var th = document.createElement('th');
-      th.appendChild(document.createTextNode(headerText));
-      headerRow.appendChild(th);
-    });
-
-    // 创建表格主体
-    var tbody = table.createTBody();
-
-    // 插入表格数据
-    data.forEach(function(rowData) {
-      var row = tbody.insertRow();
-      
-      rowData.forEach(function(cellData, index) {
-        var cell = row.insertCell();
-        
-
-    // 如果是最后一列，则创建按钮
-    if (index === rowData.length - 1) {
-        var button = createButton(String(cellData), 'myButton');
-        cell.appendChild(button);
-        
-        // 调试语句
-       
-    } else {
-        cell.appendChild(document.createTextNode(String(cellData)));
-    }
-      });
-    });
-
-    // 将表格添加到页面中
-    tableContainer.innerHTML = '';
-    tableContainer.appendChild(table);
-  }
-   function createButton(data, id) {
-   
-   var button = document.createElement('button');
-    button.classList.add('tableButton');
-    button.id = id;
-    // 检查 data 的类型
-    if (typeof(data) === 'string') {
-        var buttonText = "select";
-         button.textContent =buttonText; 
-        // 如果是字符串，直接设置为按钮文本
-    } else if (data instanceof HTMLElement) {
-        // 如果是 HTML 元素，将其作为按钮的子元素
-        button.appendChild(data);
-    }
-
-  return button;
-
-  }
-
-
-  const conditions = [
-  {
-    stratege: {
-      Shoulder: [
-        {
-          type: {
-            EndMillingType: [
-              {
-                minValue: 10,
-                maxValue: 32,
-                content: `<label><input type="radio" name="v3"   value="2" ><img id="imgoption2" src="catalog/view/theme/default/image/option2.png"></label>`,
-              },
-              {
-                minValue: 12,
-                maxValue: 35,
-                content: `<label><input type="radio" name="v3" value="3"><img id="imgoption3" src="catalog/view/theme/default/image/option3.png"></label>`,
-              }
-            ]
-          }
-        },
-        {
-          type: {
-           ModuleMillingHead: [
-              {
-                minValue: 10,
-                maxValue: 30,
-                content: `<label><input type="radio" name="v3" value="2" ><img id="imgoption2" src="catalog/view/theme/default/image/option2.png"></label>`,
-              },
-              {
-                minValue: 12,
-                maxValue: 32,
-                content: `<label><input type="radio" name="v3" value="3" ><img id="imgoption3" src="catalog/view/theme/default/image/option3.png"></label>`,
-              }
-            ]
-          }
-        }
-
-      ]
-    }
-  },
-  {
-    stratege: {
-      HighFeed: [
-        {
-          type: {
-            EndMillingType: [
-              {
-                minValue: 15,
-                maxValue: 18,
-                content: `<input type="radio" name="v3" value="2" ><img id="imgoption2" src="catalog/view/theme/default/image/option2.png">`
-              },
-              {
-                minValue: 20,
-                maxValue: 32,
-                content: `<input type="radio" name="v3" value="3" ><img id="imgoption3" src="catalog/view/theme/default/image/option3.png">`
-              }
-            ]
-          }
-        },
-        {
-          type: {
-            ModuleMillingHead: [
-              {
-                minValue: 16,
-                maxValue: 32,
-                content: `<input type="radio" name="v3" value="2" ><img id="imgoption2" src="catalog/view/theme/default/image/option2.png">`
-              },
-              {
-                minValue: 12,
-                maxValue: 35,
-                content: `<input type="radio" name="v3" value="3" ><img id="imgoption3" src="catalog/view/theme/default/image/option3.png">`
-              }
-            ]
-          }
-        }
-      ]
-    }
-  }
-  // 可以继续添加更多条件
-];
-
-const faceconditions = [
-  {
-    stratege: {
-      Shoulder: [
-        {
-          type: {
-            FaceMillingType: [
-              {
-                maxValue: 40,
-                content: `<option value="40">40</option>`,
-              },
-              {
-               maxValue: 50,
-                content: `<option value="50">50</option>`,
-              },
-              {
-                maxValue: 63,
-                content: `<option value="63">63</option>`,
-              },
-              {
-                 maxValue: 80,
-                content: `<option value="80">80</option>`,
-              },
-              {
-                 maxValue: 100,
-                content: `<option value="100">100</option>`,
-              },
-              {
-                 maxValue: 125,
-                content: `<option value="125">125</option>`,
-              }
-            ]
-          }
-        }
-
-      ]
-    }
-  },
-  {
-    stratege: {
-      Face: [
-        {
-          type: {
-            FaceMillingType: [
-              
-              {
-               maxValue: 50,
-                content: `<option value="50">50</option>`,
-              },
-              {
-                maxValue: 63,
-                content: `<option value="63">63</option>`,
-              },
-              {
-                 maxValue: 80,
-                content: `<option value="80">80</option>`,
-              },
-              {
-                 maxValue: 100,
-                content: `<option value="100">100</option>`,
-              },
-              {
-                 maxValue: 125,
-                content: `<option value="125">125</option>`,
-              },
-              {
-                 maxValue: 160,
-                content: `<option value="160">160</option>`,
-              },
-              {
-                 maxValue: 200,
-                content: `<option value="200">200</option>`,
-              },
-              {
-                 maxValue: 250,
-                content: `<option value="250">250</option>`,
-              },
-              {
-                 maxValue: 315,
-                content: `<option value="315">315</option>`,
-              }
-            ]
-          }
-        }
-
-      ]
-    }
-  },
-  {
-    stratege: {
-     HighFeed: [
-        {
-          type: {
-            FaceMillingType: [
-              
-              {
-               maxValue: 50,
-                content: `<option value="50">50</option>`,
-              },
-              {
-                maxValue: 52,
-                content: `<option value="52">52</option>`,
-              },
-              {
-                maxValue: 63,
-                content: `<option value="63">63</option>`,
-              },
-              {
-                maxValue: 66,
-                content: `<option value="66">66</option>`,
-              },
-              {
-                 maxValue: 80,
-                content: `<option value="80">80</option>`,
-              },
-              {
-                 maxValue: 100,
-                content: `<option value="100">100</option>`,
-              },
-              {
-                 maxValue: 160,
-                content: `<option value="160">160</option>`,
-              }
-            ]
-          }
-        }
-
-      ]
-    }
-  },
-  {
-    stratege: {
-     CopyMilling: [
-        {
-          type: {
-            FaceMillingType: [
-              
-              {
-               maxValue: 50,
-                content: `<option value="50">50</option>`,
-              },
-              {
-                maxValue: 63,
-                content: `<option value="63">63</option>`,
-              },
-              {
-                 maxValue: 80,
-                content: `<option value="80">80</option>`,
-              },
-              {
-                 maxValue: 100,
-                content: `<option value="100">100</option>`,
-              }
-            ]
-          }
-        }
-
-      ]
-    }
-  }
-
-];
-
-  
-  const textInput = document.getElementById("tooldiameter");
-  const runButton = document.getElementById("confirm");
-  const runfaceButton = document.getElementById("faceconfirm");
-  const displayOption = document.getElementById("displayOption");
-  let displayedContent = "";
-
-
-
-   function toggleContent() {
-
-      document.getElementById('select1').style.display = 'none';
-      document.getElementById('text').style.display = 'none';
-
-       const selectedValue = document.querySelector('input[name="variety"]:checked').value;
-      var selectedValue1= document.querySelector('input[name="variety1"]:checked').value;
-
-      //const selectedStrategy =conditions.find((strategy) => strategy.stratege[optionValue]); 
-
-        if (selectedValue=='Face' || selectedValue1=='FaceMillingType') {
-          if(selectedValue1 == 'FaceMillingType'){
-              document.getElementById('select1').style.display = 'block';
-          }
-            
-        } else if(selectedValue1 == 'FaceMillingType') {
-             document.getElementById('select1').style.display = 'block';
-        }
-        else{
-          document.getElementById('text').style.display = 'block';
-        }
-  } 
-  
-  function updateDisplayOption() {
-    const selectedOption = document.querySelector('input[name="variety"]:checked');
-     const selectedOption1= document.querySelector('input[name="variety1"]:checked');
-    const textValue = textInput.value.trim();
-      let displayedContent = "";
-     displayOption.innerHTML = "";
-
-    const type = selectedOption1 ? selectedOption1.value : null;
-    if (selectedOption && textValue !== ""&& type) {
-    // 根据选项和文本框的内容更新显示
-    const optionValue = selectedOption.value;
-    
-    // 查找选择的策略
-     const selectedStrategy = conditions.find((strategy) => strategy.stratege[optionValue]);
-
-    if (selectedStrategy && selectedStrategy.stratege[optionValue]) {
-      // 遍历策略的值
-      selectedStrategy.stratege[optionValue].forEach((strategyValue) => {
-        const conditionsOfType = strategyValue.type[type];
-
-        if (conditionsOfType) {
-          // 遍历值的条件并添加内容
-          conditionsOfType.forEach((condition) => {
-            if (textValue >= condition.minValue && textValue <= condition.maxValue) {
-              displayedContent += condition.content;
-            }
-          });
-        }
-      });
-      
-    } 
-    
-
-    displayOption.innerHTML = displayedContent;
-    }
-    else {
-      // 如果没有选中选项或文本框内容为空，则清空显示
-      displayOption.textContent = "";
-    }
-  }
-  
-</script>
-
+	<div class="content">
+
+		<div class="left">
+
+			<div id="application" style="display: none;">
+
+				<div id="indexable">
+					<p id="indexable1">Indexable Milling</p>
+					<button class="select" value="Indexable Milling" onclick="showButtonContent('IndexableMilling',value)">Select</button>
+				</div>
+
+				<div id="solidCarbideEndmills">
+					<p id="indexable1">Solid Carbide Endmills</p>
+					<button class="select" value="Solid Carbide Endmills" onclick="showButtonContent('SolidCarbideEndmills1',value)">Select</button>
+				</div>
+
+				<div id="turningTools">
+					<p id="indexable1">Turning Tools</p>
+					<button class="select" value="Turning Tools" onclick="showButtonContent('TurningTools1',value)">Select</button>
+				</div>
+
+				<div id="holemakingTools">
+					<p id="indexable1">
+						Holemaking Tools</p>
+					<button class="select" value="Holemaking Tools" onclick="showButtonContent('Holemakingtools1',value)">Select</button>
+				</div>
+
+			</div>
+
+			<div id="specification" style="display: none;">
+				<h1>Stratege</h1>
+				<div class="radio">
+					<label>
+						<input type="radio" name="variety" value="Shoulder"/>
+						<span class="shoulderButton">Shoulder<img id="shoulderIcon" src="catalog/view/theme/default/image/shoulder-icon.png"></span>
+					</label>
+
+					<label>
+						<input type="radio" name="variety" value="Face"/>
+						<span class="faceButton">Face<img id="faceIcon" src="catalog/view/theme/default/image/face-icon.png"></span>
+					</label>
+
+					<label>
+						<input type="radio" name="variety" value="HighFeed"/>
+						<span class="highfeedButton">High Feed<img id="highfeedIcon" src="catalog/view/theme/default/image/high-feed-icon.png"></span>
+					</label>
+
+					<label>
+						<input type="radio" name="variety" value="CopyMilling"/>
+						<span class="copymillingButton">Copy Milling<img id="copyIcon" src="catalog/view/theme/default/image/copy-icon.png"></span>
+					</label>
+				</div>
+
+				<h1>Tool Type</h1>
+
+				<div id="ToolType">
+					<label>
+						<input type="radio" name="variety1" value="EndMillingType" id="EndMillingType" onclick="toggleContent()"/>
+						<span class="endmillingtypeButton">End Milling Type</span>
+					</label>
+
+					<label>
+						<input type="radio" name="variety1" value="FaceMillingType" id="FaceMillingType" onclick="toggleContent()"/>
+						<span class="facemillingtypeButton">Face Milling Type</span>
+					</label>
+
+					<label>
+						<input type="radio" name="variety1" value="ModuleMillingHead" id="ModuleMillingHead" onclick="toggleContent()"/>
+						<span class="modulemillingheadButton">Module Milling Head</span>
+					</label>
+
+				</div>
+
+				<h1>Tool Diameter</h1>
+
+				<div id="ToolDiameter">
+
+					<div id="text" style="display: none;">
+						<input type="number" id="tooldiameter"/>
+						<input type="button" id="confirm" value="Confirm Diameter"/>
+					</div>
+
+					<div id="select1" style="display: none;">
+						<h1>hello</h1>
+						<select id="tooldselect">
+							<option value="option1">40</option>
+							<option value="option2">50</option>
+							<option value="option3">63</option>
+						</select>
+						<input type="button" id="faceconfirm" value="Confirm Diameter"/>
+					</div>
+
+				</div>
+				<h1>Flutes</h1>
+				<div id="displayOption"></div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="right">
+
+		<div id="IndexableMilling" style="display: none;">
+			<h1>关于</h1>
+			<p>这是关于页面的内容。</p>
+		</div>
+
+		<div id="SolidCarbideEndmills1" style="display: none;">
+			<p>ctlorem</p>
+		</div>
+
+		<div id="TurningTools1" style="display: none;">
+			<h1>联系我们</h1>
+			<p>这是联系我们页面的内容sss。</p>
+		</div>
+
+		<div id="Holemakingtools1" style="display: none;">
+			<h1>哈囉8 8 8</h1>
+			<p>这是联系我们页面的内容。</p>
+		</div>
+
+		<div id="Shoulder" style="display: none;">
+			<p class="content2Title">Shoulder Milling</p>
+			<img id="content2Image" src="catalog/view/theme/default/image/shoulder.png">
+			<ul>
+				<li>
+					<p class="content2Content">Milling with 90 degree approach angle (KAPR=90。)</p>
+				</li>
+				<li>
+					<p class="content2Content">The thickness of the chips is large.</p>
+				</li>
+				<li>
+					<p class="content2Content">This strategy will generate mostly radial forces.</p>
+				</li>
+				<li>
+					<p class="content2Content">Advantageous for milling on workpieces with a weak structure, thin walls or unstable fixture.</p>
+				</li>
+			</ul>
+		</div>
+
+
+		<div id="Face" style="display: none;">
+			<p class="content2Title">Face Milling</p>
+			<img id="content2Image" src="catalog/view/theme/default/image/face.png">
+			<ul>
+				<li>
+					<p class="content2Content">Milling with 45 degree approach angle (KAPR=45。)</p>
+				</li>
+				<li>
+					<p class="content2Content">The thickness of the chips is medium.</p>
+				</li>
+				<li>
+					<p class="content2Content">This strategy will generate well balanced radial forces and axial forces.</p>
+				</li>
+				<li>
+					<p class="content2Content">Generally purpose choice for face milling.</p>
+				</li>
+				<li>
+					<p class="content2Content">Limits vibration tendencies when milling long overhangs or with weak tool holders.</p>
+				</li>
+			</ul>
+		</div>
+
+		<div id="HighFeed" style="display: none;">
+			<p class="content2Title">High Feed Milling</p>
+			<img id="content2Image" src="catalog/view/theme/default/image/high-feed.png">
+			<ul>
+				<li>
+					<p class="content2Content">Milling with nearly 10 degree approach Angle (KAPR=45。)</p>
+				</li>
+				<li>
+					<p class="content2Content">The thickness of the chips is thin.</p>
+				</li>
+				<li>
+					<p class="content2Content">This strategy will generate mostly axial forces.</p>
+				</li>
+				<li>
+					<p class="content2Content">Allows for high feed per tooth at small depth of cut.</p>
+				</li>
+				<li>
+					<p class="content2Content">Limits vibration tendencies when milling long overhangs or with weak tool holders.</p>
+				</li>
+			</ul>
+		</div>
+
+		<div id="CopyMilling" style="display: none;">
+			<p class="content2Title">Copy Milling</p>
+			<img id="content2Image" src="catalog/view/theme/default/image/copy.png">
+			<ul>
+				<li>
+					<p class="content2Content">Milling with round inserts, the approach angle depends on the depth of cut.</p>
+				</li>
+				<li>
+					<p class="content2Content">Suitable for general purpose milling and is effective for roughing operation .</p>
+				</li>
+				<li>
+					<p class="content2Content">Strong cutting edge is suitable for high table feed with thinner chips generated.</p>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="content" id="material" style="display: none;">
+
+
+		<div class="tableContent" id="materialContent">
+			<button id="blueP">P</button>
+			<button id="yelloM">M</button>
+			<button id="redK">K</button>
+			<button id="greenN">N</button>
+			<button id="brownP">S</button>
+			<button id="grayH">H</button>
+		</div>
+		<div id="tableContainer">hi</div>
+	</div>
+
+	<div class="footer">footer</div>
+
+
+	 <script>
+		
+		   let previousButton = null; 
+		   let currentContent = null;
+		   
+		  function  showContent(contentId) {
+		
+		   const rightContents = document.querySelectorAll('.right > div');
+		    rightContents.forEach(content => {
+		        content.style.display = 'none';
+		    });
+		
+		    const contents = document.querySelectorAll('.content > .left > div');
+		    contents.forEach(content => {
+		      content.style.display = 'none';
+		    });
+		
+		    const selectedContent = document.getElementById(contentId);
+		    if (selectedContent) {
+		      selectedContent.style.display = 'block';
+		    }
+		    const element = document.querySelector('.' + contentId);
+		     
+		      if (element && currentContent !== contentId) {
+		      element.style.backgroundColor = '#035C52';
+		      element.style.color = '#FFF';
+		
+		      }
+		    if (previousButton) {
+		        previousButton.style.backgroundColor= '';
+		        previousButton.style.color = '';
+		      }
+		      // 更新上一个按钮为当前按钮
+		      previousButton = element;
+		      currentContent = contentId;
+		    
+		   
+		  }
+		
+		 
+		
+		  function showTableButton(contentId) {
+		    const contents = document.querySelectorAll('.tableContent');
+		    contents.forEach(content => {
+		      content.style.display = 'none';
+		    });
+		
+		    const selectedContent = document.getElementById(contentId);
+		    if (selectedContent) {
+		      selectedContent.style.display = 'block';
+		    }   
+		
+		  }
+		
+		 const originalApplicationContent = document.querySelector('.application a').innerText;
+		
+		function restoreOriginalContent() {
+		  const element = document.querySelector('.application a');
+		  element.innerText = originalApplicationContent;
+		}
+		
+		  function showButtonContent(contentId,value) {
+		    const contents = document.querySelectorAll('.right> div');
+		    const element = document.querySelector('.application');
+		    console.log(element.querySelector('a').innerText);
+		    
+		   
+		    contents.forEach(content => {
+		      content.style.display = 'none';
+		    });
+		
+		    const selectedContent = document.getElementById(contentId);
+		    if (selectedContent) {
+		      selectedContent.style.display = 'block';
+		    }
+		    
+		    if (element) {
+		      const link = element.querySelector('a');
+		      restoreOriginalContent();
+		        const newValueSpan = document.createElement('div'); //改成div
+		        newValueSpan.innerText ='\n' +  value;
+		        newValueSpan.style.fontSize = '14px'; 
+		         newValueSpan.style.color = '#f3be3d';
+		        link.appendChild(newValueSpan);
+		      
+		    
+		    }
+		   
+		  
+		  }
+		  function showadioContent(selectedValue) {
+		    const contentDivs = document.querySelectorAll('.right> div');
+		
+		    contentDivs.forEach(contentDiv => {
+		      contentDiv.style.display = 'none';
+		    });
+		
+		    const selectedContentDiv = document.getElementById(selectedValue);
+		    if (selectedContentDiv) {
+		    selectedContentDiv.style.display = 'block';
+		    }
+		  }
+		
+		  const radioButtons = document.querySelectorAll('input[name="variety"]');
+		  radioButtons.forEach(radioButton => {
+		    radioButton.addEventListener('change', function() {
+		      showadioContent(this.value);
+		    });
+		  });
+		
+		  const tableDataBlueP = [
+		    ['P1', 'Low-Carbon Steels','< 125', '-','C15, Ck22, ST37-2, S235JR, 9SMnPb28, GS38',createButton('select', 'buttonP1')],
+		    ['P2', 'Medium-Carbon Steels, High-Carbon Steels', '< 220','-','ST52, S355JR, C35, GS60, Cf53',createButton('select', 'buttonP2')],
+		    ['P3', 'Alloy Steels, Tool Steels','< 330','-', '16MnCr5, Ck45, 21CrMoV5-7, 38SMn28',createButton('select', 'buttonP3')],
+		    ['P4','Alloy Steels, Tool Stee','350 ~ 450', '-','100Cr6, 105MnCr4, 51CrMnV4, 105WCr6, 100Cr2',createButton('select', 'buttonP4')],
+		    ['P5','Ferritic, Martensitic, PH Stainless Steels','< 330', '-','X6Cr13, X10Cr13, X20Cr13, X12CrMoS17, X20CrMo13',createButton('select', 'buttonP5')],
+		    ['P6','High-Strength Ferritic, Martensitic, PH Stainless Steels','350 ~ 450','-', 'X40CrMoV51, H1, X155CrVMo121, S6-5-2-5, X45Cr13, X120Mn12',createButton('select', 'buttonP6')]
+		  ];
+		  const showblueP = document.getElementById('blueP');
+		   const tableContainer = document.getElementById('tableContainer');
+		
+		  showblueP.addEventListener('click', function() {
+		    displayTable(tableDataBlueP);
+		  });
+		
+		function displayTable(data) {
+		    // 创建表格元素
+		    var table = document.createElement('table');
+		
+		    // 创建表头
+		    var thead = table.createTHead();
+		    var headerRow = thead.insertRow();
+		    var headers = ['Material group' , 'Description', 'Hardness(HB)','Hardness(HRC)','Standard Din',''];
+		
+		    // 插入表头单元格
+		    headers.forEach(function(headerText) {
+		      var th = document.createElement('th');
+		      th.appendChild(document.createTextNode(headerText));
+		      headerRow.appendChild(th);
+		    });
+		
+		    // 创建表格主体
+		    var tbody = table.createTBody();
+		
+		    // 插入表格数据
+		    data.forEach(function(rowData) {
+		      var row = tbody.insertRow();
+		      
+		      rowData.forEach(function(cellData, index) {
+		        var cell = row.insertCell();
+		        
+		
+		    // 如果是最后一列，则创建按钮
+		    if (index === rowData.length - 1) {
+		        var button = createButton(String(cellData), 'myButton');
+		        cell.appendChild(button);
+		        
+		        // 调试语句
+		       
+		    } else {
+		        cell.appendChild(document.createTextNode(String(cellData)));
+		    }
+		      });
+		    });
+		
+		    // 将表格添加到页面中
+		    tableContainer.innerHTML = '';
+		    tableContainer.appendChild(table);
+		  }
+		   function createButton(data, id) {
+		   
+		   var button = document.createElement('button');
+		    button.classList.add('tableButton');
+		    button.id = id;
+		    // 检查 data 的类型
+		    if (typeof(data) === 'string') {
+		        var buttonText = "select";
+		         button.textContent =buttonText; 
+		        // 如果是字符串，直接设置为按钮文本
+		    } else if (data instanceof HTMLElement) {
+		        // 如果是 HTML 元素，将其作为按钮的子元素
+		        button.appendChild(data);
+		    }
+		
+		  return button;
+		
+		  }
+		
+		
+		  const conditions = [
+		  {
+		    stratege: {
+		      Shoulder: [
+		        {
+		          type: {
+		            EndMillingType: [
+		              {
+		                minValue: 10,
+		                maxValue: 32,
+		                content: `<label><input type="radio" name="v3"   value="2" ><img id="imgoption2" src="catalog/view/theme/default/image/option2.png"></label>`,
+		              },
+		              {
+		                minValue: 12,
+		                maxValue: 35,
+		                content: `<label><input type="radio" name="v3" value="3"><img id="imgoption3" src="catalog/view/theme/default/image/option3.png"></label>`,
+		              }
+		            ]
+		          }
+		        },
+		        {
+		          type: {
+		           ModuleMillingHead: [
+		              {
+		                minValue: 10,
+		                maxValue: 30,
+		                content: `<label><input type="radio" name="v3" value="2" ><img id="imgoption2" src="catalog/view/theme/default/image/option2.png"></label>`,
+		              },
+		              {
+		                minValue: 12,
+		                maxValue: 32,
+		                content: `<label><input type="radio" name="v3" value="3" ><img id="imgoption3" src="catalog/view/theme/default/image/option3.png"></label>`,
+		              }
+		            ]
+		          }
+		        }
+		
+		      ]
+		    }
+		  },
+		  {
+		    stratege: {
+		      HighFeed: [
+		        {
+		          type: {
+		            EndMillingType: [
+		              {
+		                minValue: 15,
+		                maxValue: 18,
+		                content: `<input type="radio" name="v3" value="2" ><img id="imgoption2" src="catalog/view/theme/default/image/option2.png">`
+		              },
+		              {
+		                minValue: 20,
+		                maxValue: 32,
+		                content: `<input type="radio" name="v3" value="3" ><img id="imgoption3" src="catalog/view/theme/default/image/option3.png">`
+		              }
+		            ]
+		          }
+		        },
+		        {
+		          type: {
+		            ModuleMillingHead: [
+		              {
+		                minValue: 16,
+		                maxValue: 32,
+		                content: `<input type="radio" name="v3" value="2" ><img id="imgoption2" src="catalog/view/theme/default/image/option2.png">`
+		              },
+		              {
+		                minValue: 12,
+		                maxValue: 35,
+		                content: `<input type="radio" name="v3" value="3" ><img id="imgoption3" src="catalog/view/theme/default/image/option3.png">`
+		              }
+		            ]
+		          }
+		        }
+		      ]
+		    }
+		  }
+		  // 可以继续添加更多条件
+		];
+		
+		const faceconditions = [
+		  {
+		    stratege: {
+		      Shoulder: [
+		        {
+		          type: {
+		            FaceMillingType: [
+		              {
+		                maxValue: 40,
+		                content: `<option value="40">40</option>`,
+		              },
+		              {
+		               maxValue: 50,
+		                content: `<option value="50">50</option>`,
+		              },
+		              {
+		                maxValue: 63,
+		                content: `<option value="63">63</option>`,
+		              },
+		              {
+		                 maxValue: 80,
+		                content: `<option value="80">80</option>`,
+		              },
+		              {
+		                 maxValue: 100,
+		                content: `<option value="100">100</option>`,
+		              },
+		              {
+		                 maxValue: 125,
+		                content: `<option value="125">125</option>`,
+		              }
+		            ]
+		          }
+		        }
+		
+		      ]
+		    }
+		  },
+		  {
+		    stratege: {
+		      Face: [
+		        {
+		          type: {
+		            FaceMillingType: [
+		              
+		              {
+		               maxValue: 50,
+		                content: `<option value="50">50</option>`,
+		              },
+		              {
+		                maxValue: 63,
+		                content: `<option value="63">63</option>`,
+		              },
+		              {
+		                 maxValue: 80,
+		                content: `<option value="80">80</option>`,
+		              },
+		              {
+		                 maxValue: 100,
+		                content: `<option value="100">100</option>`,
+		              },
+		              {
+		                 maxValue: 125,
+		                content: `<option value="125">125</option>`,
+		              },
+		              {
+		                 maxValue: 160,
+		                content: `<option value="160">160</option>`,
+		              },
+		              {
+		                 maxValue: 200,
+		                content: `<option value="200">200</option>`,
+		              },
+		              {
+		                 maxValue: 250,
+		                content: `<option value="250">250</option>`,
+		              },
+		              {
+		                 maxValue: 315,
+		                content: `<option value="315">315</option>`,
+		              }
+		            ]
+		          }
+		        }
+		
+		      ]
+		    }
+		  },
+		  {
+		    stratege: {
+		     HighFeed: [
+		        {
+		          type: {
+		            FaceMillingType: [
+		              
+		              {
+		               maxValue: 50,
+		                content: `<option value="50">50</option>`,
+		              },
+		              {
+		                maxValue: 52,
+		                content: `<option value="52">52</option>`,
+		              },
+		              {
+		                maxValue: 63,
+		                content: `<option value="63">63</option>`,
+		              },
+		              {
+		                maxValue: 66,
+		                content: `<option value="66">66</option>`,
+		              },
+		              {
+		                 maxValue: 80,
+		                content: `<option value="80">80</option>`,
+		              },
+		              {
+		                 maxValue: 100,
+		                content: `<option value="100">100</option>`,
+		              },
+		              {
+		                 maxValue: 160,
+		                content: `<option value="160">160</option>`,
+		              }
+		            ]
+		          }
+		        }
+		
+		      ]
+		    }
+		  },
+		  {
+		    stratege: {
+		     CopyMilling: [
+		        {
+		          type: {
+		            FaceMillingType: [
+		              
+		              {
+		               maxValue: 50,
+		                content: `<option value="50">50</option>`,
+		              },
+		              {
+		                maxValue: 63,
+		                content: `<option value="63">63</option>`,
+		              },
+		              {
+		                 maxValue: 80,
+		                content: `<option value="80">80</option>`,
+		              },
+		              {
+		                 maxValue: 100,
+		                content: `<option value="100">100</option>`,
+		              }
+		            ]
+		          }
+		        }
+		
+		      ]
+		    }
+		  }
+		
+		];
+		
+		  
+		  const textInput = document.getElementById("tooldiameter");
+		  const runButton = document.getElementById("confirm");
+		  const runfaceButton = document.getElementById("faceconfirm");
+		  const displayOption = document.getElementById("displayOption");
+		  let displayedContent = "";
+		
+		
+		
+		   function toggleContent() {
+		
+		      document.getElementById('select1').style.display = 'none';
+		      document.getElementById('text').style.display = 'none';
+		
+		       const selectedValue = document.querySelector('input[name="variety"]:checked').value;
+		      var selectedValue1= document.querySelector('input[name="variety1"]:checked').value;
+		
+		      //const selectedStrategy =conditions.find((strategy) => strategy.stratege[optionValue]); 
+		
+		        if (selectedValue=='Face' || selectedValue1=='FaceMillingType') {
+		          if(selectedValue1 == 'FaceMillingType'){
+		              document.getElementById('select1').style.display = 'block';
+		          }
+		            
+		        } else if(selectedValue1 == 'FaceMillingType') {
+		             document.getElementById('select1').style.display = 'block';
+		        }
+		        else{
+		          document.getElementById('text').style.display = 'block';
+		        }
+		  } 
+		  
+		  function updateDisplayOption() {
+		    const selectedOption = document.querySelector('input[name="variety"]:checked');
+		     const selectedOption1= document.querySelector('input[name="variety1"]:checked');
+		    const textValue = textInput.value.trim();
+		      let displayedContent = "";
+		     displayOption.innerHTML = "";
+		
+		    const type = selectedOption1 ? selectedOption1.value : null;
+		    if (selectedOption && textValue !== ""&& type) {
+		    // 根据选项和文本框的内容更新显示
+		    const optionValue = selectedOption.value;
+		    
+		    // 查找选择的策略
+		     const selectedStrategy = conditions.find((strategy) => strategy.stratege[optionValue]);
+		
+		    if (selectedStrategy && selectedStrategy.stratege[optionValue]) {
+		      // 遍历策略的值
+		      selectedStrategy.stratege[optionValue].forEach((strategyValue) => {
+		        const conditionsOfType = strategyValue.type[type];
+		
+		        if (conditionsOfType) {
+		          // 遍历值的条件并添加内容
+		          conditionsOfType.forEach((condition) => {
+		            if (textValue >= condition.minValue && textValue <= condition.maxValue) {
+		              displayedContent += condition.content;
+		            }
+		          });
+		        }
+		      });
+		      
+		    } 
+		    
+		
+		    displayOption.innerHTML = displayedContent;
+		    }
+		    else {
+		      // 如果没有选中选项或文本框内容为空，则清空显示
+		      displayOption.textContent = "";
+		    }
+		  }
+		  
+		</script>
